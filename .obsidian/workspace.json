@@ -1,0 +1,188 @@
+{
+  "main": {
+    "id": "5e434a1b76a3dce1",
+    "type": "split",
+    "children": [
+      {
+        "id": "aed99d66d6c06822",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eeff1b96446f5155",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "React/Кастомные хуки.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "38c39d7dcccc88e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Браузер/Способы хранения данных в браузере.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0023c1732976b652",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript/Связывание this.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "81b0b30f81923b3a",
+    "type": "split",
+    "children": [
+      {
+        "id": "6fd8d654c93a80ff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b1cdf03bf8484584",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "168e0e2467da0611",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d81d8f1e5e0089e5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 338.5
+  },
+  "right": {
+    "id": "ec6445908484ba86",
+    "type": "split",
+    "children": [
+      {
+        "id": "0c4af61219b7fd13",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "62409080d13a26ed",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "JavaScript/Связывание this.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ba5b57a07b702ae2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "JavaScript/Связывание this.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ccc8a50fd3ed0cae",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f8dc5f8166a2e8cd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "JavaScript/Связывание this.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false
+    }
+  },
+  "active": "b1cdf03bf8484584",
+  "lastOpenFiles": [
+    "Браузер/Способы хранения данных в браузере.md",
+    "JavaScript/Связывание this.md",
+    "React/Кастомные хуки.md",
+    "Браузер",
+    "React",
+    "JavaScript/Логические операторы.md",
+    "Алгоритмы/Массивы.md",
+    "Алгоритмы/План.md",
+    "Алгоритмы",
+    "Welcome.md",
+    "JavaScript"
+  ]
+}

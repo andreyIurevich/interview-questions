@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "51bb6c54183d6969",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Браузер/Событийный цикл.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -94,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338.5
+    "width": 362.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaScript/Связывание this.md",
+                "file": "Браузер/Событийный цикл.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaScript/Связывание this.md",
+                "file": "Браузер/Событийный цикл.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaScript/Связывание this.md"
+                "file": "Браузер/Событийный цикл.md"
               }
             }
           }
@@ -173,9 +185,10 @@
   },
   "active": "b1cdf03bf8484584",
   "lastOpenFiles": [
+    "React/Кастомные хуки.md",
+    "Браузер/Событийный цикл.md",
     "Браузер/Способы хранения данных в браузере.md",
     "JavaScript/Связывание this.md",
-    "React/Кастомные хуки.md",
     "Браузер",
     "React",
     "JavaScript/Логические операторы.md",

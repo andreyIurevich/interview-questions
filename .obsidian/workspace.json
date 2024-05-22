@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/Замыкание.md",
+                "file": "JavaScript/Symbol.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaScript/Замыкание.md",
+                "file": "JavaScript/Symbol.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaScript/Замыкание.md",
+                "file": "JavaScript/Symbol.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaScript/Замыкание.md"
+                "file": "JavaScript/Symbol.md"
               }
             }
           }
@@ -185,10 +185,11 @@
   },
   "active": "51bb6c54183d6969",
   "lastOpenFiles": [
-    "JavaScript/Поднятие.md",
     "JavaScript/Замыкание.md",
+    "JavaScript/Symbol.md",
     "JavaScript/Область видимости.md",
     "JavaScript/let, var и const.md",
+    "JavaScript/Поднятие.md",
     "JavaScript/Связывание this.md",
     "Браузер/Событийный цикл.md",
     "Браузер/Способы хранения данных в браузере.md",

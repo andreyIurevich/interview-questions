@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Браузер/Событийный цикл.md",
+                "file": "JavaScript/let, var и const.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Браузер/Событийный цикл.md",
+                "file": "JavaScript/let, var и const.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Браузер/Событийный цикл.md",
+                "file": "JavaScript/let, var и const.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Браузер/Событийный цикл.md"
+                "file": "JavaScript/let, var и const.md"
               }
             }
           }
@@ -185,10 +185,11 @@
   },
   "active": "51bb6c54183d6969",
   "lastOpenFiles": [
-    "Браузер/Способы хранения данных в браузере.md",
-    "Браузер/Событийный цикл.md",
-    "React/Кастомные хуки.md",
+    "JavaScript/let, var и const.md",
     "JavaScript/Связывание this.md",
+    "Браузер/Событийный цикл.md",
+    "Браузер/Способы хранения данных в браузере.md",
+    "React/Кастомные хуки.md",
     "Браузер",
     "React",
     "JavaScript/Логические операторы.md",

@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "aed99d66d6c06822",
+        "id": "5da82633c4109d63",
         "type": "tabs",
         "children": [
           {
-            "id": "eeff1b96446f5155",
+            "id": "695c3101a8f84727",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/Кастомные хуки.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "38c39d7dcccc88e6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Браузер/Способы хранения данных в браузере.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0023c1732976b652",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JavaScript/Связывание this.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "51bb6c54183d6969",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JavaScript/Symbol.md",
+                "file": "JavaScript/Прототипное наследование.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 325.5
+    "width": 377.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaScript/Symbol.md",
+                "file": "JavaScript/Прототипное наследование.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaScript/Symbol.md",
+                "file": "JavaScript/Прототипное наследование.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaScript/Symbol.md"
+                "file": "JavaScript/Прототипное наследование.md"
               }
             }
           }
@@ -183,20 +146,21 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "51bb6c54183d6969",
+  "active": "695c3101a8f84727",
   "lastOpenFiles": [
+    "JavaScript/Связывание this.md",
+    "JavaScript/Прототипное наследование.md",
+    "JavaScript/Логические операторы.md",
     "JavaScript/Замыкание.md",
     "JavaScript/Symbol.md",
-    "JavaScript/Область видимости.md",
     "JavaScript/let, var и const.md",
-    "JavaScript/Поднятие.md",
-    "JavaScript/Связывание this.md",
-    "Браузер/Событийный цикл.md",
-    "Браузер/Способы хранения данных в браузере.md",
     "React/Кастомные хуки.md",
+    "Браузер/Способы хранения данных в браузере.md",
+    "JavaScript/Область видимости.md",
+    "JavaScript/Поднятие.md",
+    "Браузер/Событийный цикл.md",
     "Браузер",
     "React",
-    "JavaScript/Логические операторы.md",
     "Алгоритмы/Массивы.md",
     "Алгоритмы/План.md",
     "Алгоритмы",

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/Прототипное наследование.md",
+                "file": "React/Throttle, debounce.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 377.5
+    "width": 327.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaScript/Прототипное наследование.md",
+                "file": "React/Throttle, debounce.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaScript/Прототипное наследование.md",
+                "file": "React/Throttle, debounce.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaScript/Прототипное наследование.md"
+                "file": "React/Throttle, debounce.md"
               }
             }
           }
@@ -148,13 +148,14 @@
   },
   "active": "695c3101a8f84727",
   "lastOpenFiles": [
-    "JavaScript/Связывание this.md",
+    "React/Кастомные хуки.md",
+    "React/Throttle, debounce.md",
     "JavaScript/Прототипное наследование.md",
+    "JavaScript/Связывание this.md",
     "JavaScript/Логические операторы.md",
     "JavaScript/Замыкание.md",
     "JavaScript/Symbol.md",
     "JavaScript/let, var и const.md",
-    "React/Кастомные хуки.md",
     "Браузер/Способы хранения данных в браузере.md",
     "JavaScript/Область видимости.md",
     "JavaScript/Поднятие.md",

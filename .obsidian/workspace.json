@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/Throttle, debounce.md",
+                "file": "React/React Fiber.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 332.5
+    "width": 360.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/Throttle, debounce.md",
+                "file": "React/React Fiber.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/Throttle, debounce.md",
+                "file": "React/React Fiber.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/Throttle, debounce.md"
+                "file": "React/React Fiber.md"
               }
             }
           }
@@ -148,8 +148,10 @@
   },
   "active": "695c3101a8f84727",
   "lastOpenFiles": [
-    "React/Кастомные хуки.md",
+    "React/Ссылки.md",
+    "React/React Fiber.md",
     "React/Throttle, debounce.md",
+    "React/Кастомные хуки.md",
     "JavaScript/Прототипное наследование.md",
     "JavaScript/Связывание this.md",
     "JavaScript/Логические операторы.md",

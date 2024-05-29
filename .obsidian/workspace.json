@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/React Fiber.md",
+                "file": "TypeScript/Interface vs Abstract class.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5
+    "width": 319.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/React Fiber.md",
+                "file": "TypeScript/Interface vs Abstract class.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/React Fiber.md",
+                "file": "TypeScript/Interface vs Abstract class.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/React Fiber.md"
+                "file": "TypeScript/Interface vs Abstract class.md"
               }
             }
           }
@@ -148,8 +148,11 @@
   },
   "active": "695c3101a8f84727",
   "lastOpenFiles": [
-    "React/Ссылки.md",
+    "TypeScript/Type vs Interface.md",
+    "TypeScript/Interface vs Abstract class.md",
     "React/React Fiber.md",
+    "TypeScript",
+    "React/Ссылки.md",
     "React/Throttle, debounce.md",
     "React/Кастомные хуки.md",
     "JavaScript/Прототипное наследование.md",

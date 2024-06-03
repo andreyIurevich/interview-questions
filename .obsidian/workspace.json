@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript/Interface vs Abstract class.md",
+                "file": "Алгоритмы/План.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 319.5
+    "width": 349.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TypeScript/Interface vs Abstract class.md",
+                "file": "Алгоритмы/План.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TypeScript/Interface vs Abstract class.md",
+                "file": "Алгоритмы/План.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TypeScript/Interface vs Abstract class.md"
+                "file": "Алгоритмы/План.md"
               }
             }
           }
@@ -148,8 +148,17 @@
   },
   "active": "695c3101a8f84727",
   "lastOpenFiles": [
-    "TypeScript/Type vs Interface.md",
+    "Алгоритмы/Массивы.md",
+    "Алгоритмы/План.md",
+    "JavaScript/Map, Set.md",
+    "Алгоритмы/Сортировка.md",
+    "Алгоритмы/Поиск.md",
     "TypeScript/Interface vs Abstract class.md",
+    "TypeScript/Type vs Interface.md",
+    "TypeScript/Типы данных.md",
+    "Браузер/Способы хранения данных в браузере.md",
+    "TypeScript/Ссылки.md",
+    "JavaScript/Вопросы.md",
     "React/React Fiber.md",
     "TypeScript",
     "React/Ссылки.md",
@@ -161,14 +170,11 @@
     "JavaScript/Замыкание.md",
     "JavaScript/Symbol.md",
     "JavaScript/let, var и const.md",
-    "Браузер/Способы хранения данных в браузере.md",
     "JavaScript/Область видимости.md",
     "JavaScript/Поднятие.md",
     "Браузер/Событийный цикл.md",
     "Браузер",
     "React",
-    "Алгоритмы/Массивы.md",
-    "Алгоритмы/План.md",
     "Алгоритмы",
     "Welcome.md",
     "JavaScript"

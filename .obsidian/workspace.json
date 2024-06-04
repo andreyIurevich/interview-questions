@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Алгоритмы/План.md",
+                "file": "Браузер/CORS.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Алгоритмы/План.md",
+                "file": "Браузер/CORS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Алгоритмы/План.md",
+                "file": "Браузер/CORS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Алгоритмы/План.md"
+                "file": "Браузер/CORS.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "695c3101a8f84727",
   "lastOpenFiles": [
-    "Алгоритмы/Массивы.md",
     "Алгоритмы/План.md",
+    "Браузер/CORS.md",
+    "Алгоритмы/Массивы.md",
     "JavaScript/Map, Set.md",
     "Алгоритмы/Сортировка.md",
     "Алгоритмы/Поиск.md",

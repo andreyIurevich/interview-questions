@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Браузер/CORS.md",
+                "file": "Алгоритмы/Динамическое программирование.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5
+    "width": 329.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Браузер/CORS.md",
+                "file": "Алгоритмы/Динамическое программирование.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Браузер/CORS.md",
+                "file": "Алгоритмы/Динамическое программирование.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Браузер/CORS.md"
+                "file": "Алгоритмы/Динамическое программирование.md"
               }
             }
           }
@@ -149,8 +149,11 @@
   "active": "695c3101a8f84727",
   "lastOpenFiles": [
     "Алгоритмы/План.md",
-    "Браузер/CORS.md",
+    "Алгоритмы/Динамическое программирование.md",
+    "JavaScript/Округление чисел.md",
     "Алгоритмы/Массивы.md",
+    "Браузер/CORS.md",
+    "Браузер/Событийный цикл.md",
     "JavaScript/Map, Set.md",
     "Алгоритмы/Сортировка.md",
     "Алгоритмы/Поиск.md",
@@ -172,12 +175,9 @@
     "JavaScript/Symbol.md",
     "JavaScript/let, var и const.md",
     "JavaScript/Область видимости.md",
-    "JavaScript/Поднятие.md",
-    "Браузер/Событийный цикл.md",
     "Браузер",
     "React",
     "Алгоритмы",
-    "Welcome.md",
     "JavaScript"
   ]
 }

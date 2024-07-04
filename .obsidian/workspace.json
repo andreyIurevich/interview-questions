@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 329.5
+    "width": 269.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -149,6 +149,7 @@
   "active": "695c3101a8f84727",
   "lastOpenFiles": [
     "Алгоритмы/План.md",
+    "Алгоритмы/Поиск.md",
     "Алгоритмы/Динамическое программирование.md",
     "JavaScript/Округление чисел.md",
     "Алгоритмы/Массивы.md",
@@ -156,7 +157,6 @@
     "Браузер/Событийный цикл.md",
     "JavaScript/Map, Set.md",
     "Алгоритмы/Сортировка.md",
-    "Алгоритмы/Поиск.md",
     "TypeScript/Interface vs Abstract class.md",
     "TypeScript/Type vs Interface.md",
     "TypeScript/Типы данных.md",

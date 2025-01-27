@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Css/Вопросы.md",
+                "file": "Вопросы(темы).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Вопросы"
+              "title": "Вопросы(темы)"
             }
           }
         ]
@@ -164,7 +164,12 @@
   },
   "active": "b89f891adf21f321",
   "lastOpenFiles": [
+    "Браузер/Событийный цикл.md",
+    "JavaScript/Замыкание.md",
+    "JavaScript/Область видимости.md",
+    "JavaScript/Вопросы.md",
     "Вопросы(темы).md",
+    "React/Ссылки.md",
     "Css/Вопросы.md",
     "Css",
     "TypeScript/Interface vs Abstract class.md",
@@ -172,7 +177,6 @@
     "JavaScript/ESlint и Prettier.md",
     "Браузер/Этапы отрисовки страниц.md",
     "Vue/Небольшие вопросы.md",
-    "React/Ссылки.md",
     "Браузер/Работа со временем.md",
     "Vue/Жизненный цикл компонента.md",
     "Vue",
@@ -182,17 +186,13 @@
     "JavaScript/Округление чисел.md",
     "Алгоритмы/Массивы.md",
     "Браузер/CORS.md",
-    "Браузер/Событийный цикл.md",
     "JavaScript/Map, Set.md",
     "Алгоритмы/Сортировка.md",
     "TypeScript/Типы данных.md",
     "Браузер/Способы хранения данных в браузере.md",
     "TypeScript/Ссылки.md",
-    "JavaScript/Вопросы.md",
     "React/React Fiber.md",
     "TypeScript",
-    "React/Throttle, debounce.md",
-    "React/Кастомные хуки.md",
     "Браузер",
     "React",
     "Алгоритмы",

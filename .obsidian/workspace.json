@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "abf11261e16a457a",
+        "id": "c4d63d7088deb9e9",
         "type": "tabs",
         "children": [
           {
-            "id": "b89f891adf21f321",
+            "id": "b1d541f3a3ede0ec",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Вопросы(темы).md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Вопросы(темы)"
+              "title": "New tab"
             }
           }
         ]
@@ -78,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 327.5
+    "width": 303.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -163,10 +159,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b89f891adf21f321",
+  "active": "b1d541f3a3ede0ec",
   "lastOpenFiles": [
+    "Css/Вопросы.md",
+    "Css/Семантическая вёрстка.md",
+    "Вопросы(черновик).md",
+    "JavaScript/Область видимости.md",
+    "JavaScript/Замыкание.md",
+    "JavaScript/Прототипное наследование.md",
+    "JavaScript/Symbol.md",
     "Браузер/CORS.md",
-    "Вопросы(темы).md",
     "Браузер/Способы хранения данных в браузере.md",
     "React/Отличие useRef от useState.md",
     "JavaScript/Функциональное программирование.md",
@@ -175,11 +177,8 @@
     "Алгоритмы/План.md",
     "Алгоритмы/Массивы.md",
     "Браузер/Событийный цикл.md",
-    "JavaScript/Замыкание.md",
-    "JavaScript/Область видимости.md",
     "JavaScript/Вопросы.md",
     "React/Ссылки.md",
-    "Css/Вопросы.md",
     "Css",
     "TypeScript/Interface vs Abstract class.md",
     "TypeScript/Type vs Interface.md",
@@ -190,9 +189,6 @@
     "Vue/Жизненный цикл компонента.md",
     "Vue",
     "Алгоритмы/Динамическое программирование.md",
-    "JavaScript/Округление чисел.md",
-    "JavaScript/Map, Set.md",
-    "TypeScript/Типы данных.md",
     "TypeScript",
     "Браузер",
     "React",

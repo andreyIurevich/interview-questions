@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c4d63d7088deb9e9",
+        "id": "913390ea0e00d41e",
         "type": "tabs",
         "children": [
           {
-            "id": "b1d541f3a3ede0ec",
+            "id": "ad094d37a2a90cd8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript/Поднятие.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Поднятие"
             }
           }
         ]
@@ -159,11 +163,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b1d541f3a3ede0ec",
+  "active": "ad094d37a2a90cd8",
   "lastOpenFiles": [
+    "TypeScript/Типы данных.md",
+    "Вопросы(черновик).md",
+    "JavaScript/Поднятие.md",
+    "TypeScript/Infer.md",
+    "JavaScript/Связывание this.md",
+    "JavaScript/Вопросы.md",
     "Css/Вопросы.md",
     "Css/Семантическая вёрстка.md",
-    "Вопросы(черновик).md",
     "JavaScript/Область видимости.md",
     "JavaScript/Замыкание.md",
     "JavaScript/Прототипное наследование.md",
@@ -177,18 +186,13 @@
     "Алгоритмы/План.md",
     "Алгоритмы/Массивы.md",
     "Браузер/Событийный цикл.md",
-    "JavaScript/Вопросы.md",
     "React/Ссылки.md",
     "Css",
     "TypeScript/Interface vs Abstract class.md",
     "TypeScript/Type vs Interface.md",
     "JavaScript/ESlint и Prettier.md",
     "Браузер/Этапы отрисовки страниц.md",
-    "Vue/Небольшие вопросы.md",
-    "Браузер/Работа со временем.md",
-    "Vue/Жизненный цикл компонента.md",
     "Vue",
-    "Алгоритмы/Динамическое программирование.md",
     "TypeScript",
     "Браузер",
     "React",

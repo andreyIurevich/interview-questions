@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "Rest Api"
             }
+          },
+          {
+            "id": "b1f27f7ea35c1c5f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Push и Pull системы.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Push и Pull системы"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 345.5
+    "width": 308.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -178,10 +192,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7ab35cdf2f6dbc17",
+  "active": "b1f27f7ea35c1c5f",
   "lastOpenFiles": [
-    "Вопросы(черновик).md",
     "Браузер/Rest Api.md",
+    "Push и Pull системы.md",
+    "Вопросы(черновик).md",
     "JavaScript/Поднятие.md",
     "TypeScript/Типы данных.md",
     "TypeScript/Infer.md",
@@ -206,7 +221,6 @@
     "Css",
     "TypeScript/Interface vs Abstract class.md",
     "TypeScript/Type vs Interface.md",
-    "JavaScript/ESlint и Prettier.md",
     "Vue",
     "TypeScript",
     "Браузер",

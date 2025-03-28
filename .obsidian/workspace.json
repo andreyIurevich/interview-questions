@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "d99bd95e114774d2",
+        "id": "b7a226629167708a",
         "type": "tabs",
         "children": [
           {
-            "id": "9d37e4e3b8f2ada9",
+            "id": "6c4909b3109988e0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript/Типы данных.md",
+                "file": "Вопросы(черновик).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Типы данных"
+              "title": "Вопросы(черновик)"
+            }
+          },
+          {
+            "id": "797f3218b9f560b1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Тестирование.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Тестирование"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -40,7 +55,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Файловый менеджер"
@@ -162,25 +178,26 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "9d37e4e3b8f2ada9",
+  "active": "797f3218b9f560b1",
   "lastOpenFiles": [
+    "Вопросы(черновик).md",
+    "Тестирование.md",
+    "Задачи.md",
+    "TypeScript/Типы данных.md",
     "JavaScript/Map, Set.md",
     "JavaScript/Область видимости.md",
     "JavaScript/Замыкание.md",
-    "Вопросы(черновик).md",
     "Браузер/Rest Api.md",
     "JavaScript/let, var и const.md",
     "JavaScript/Вопросы.md",
     "JavaScript/Анимации.md",
     "JavaScript/Прототипное наследование.md",
     "JavaScript/Связывание this.md",
-    "Задачи.md",
     "SOP.md",
     "Браузер/CORS.md",
     "JavaScript/Promise Api.md",
     "JavaScript/Push и Pull системы.md",
     "JavaScript/Поднятие.md",
-    "TypeScript/Типы данных.md",
     "TypeScript/Infer.md",
     "Css/Вопросы.md",
     "Css/Семантическая вёрстка.md",
@@ -189,7 +206,6 @@
     "React/Отличие useRef от useState.md",
     "JavaScript/Функциональное программирование.md",
     "Алгоритмы/Сортировка.md",
-    "Алгоритмы/Поиск.md",
     "Css",
     "Vue",
     "TypeScript",

@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "Flexbox"
             }
+          },
+          {
+            "id": "b38cce1e366ce165",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Хуки.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Хуки"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 246.5
+    "width": 259.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -178,10 +192,12 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "71958e133b098923",
+  "active": "b38cce1e366ce165",
   "lastOpenFiles": [
-    "Вопросы(черновик).md",
+    "React/Отличие useRef от useState.md",
+    "Хуки.md",
     "Flexbox.md",
+    "Вопросы(черновик).md",
     "Тестирование.md",
     "Задачи.md",
     "TypeScript/Типы данных.md",
@@ -204,8 +220,6 @@
     "Css/Семантическая вёрстка.md",
     "JavaScript/Symbol.md",
     "Браузер/Способы хранения данных в браузере.md",
-    "React/Отличие useRef от useState.md",
-    "JavaScript/Функциональное программирование.md",
     "Css",
     "Vue",
     "TypeScript",

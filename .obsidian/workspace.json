@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0a8efe923fc105d7",
+        "id": "dbbd3f1395eb620d",
         "type": "tabs",
         "children": [
           {
-            "id": "5c49ed2fcfd729b4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Задачи.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Задачи"
-            }
-          },
-          {
-            "id": "523894b39e61eead",
+            "id": "12338f96b2b3a4ab",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -35,8 +21,7 @@
               "title": "Вопросы(черновик)"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 361.5
+    "width": 379.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -178,18 +163,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "523894b39e61eead",
+  "active": "12338f96b2b3a4ab",
   "lastOpenFiles": [
-    "React (задачи).md",
-    "Задачи.md",
+    "Алгоритмы/План.md",
     "Браузер/Событийный цикл.md",
+    "TypeScript/Ссылки.md",
+    "Задачи.md",
+    "Вопросы(черновик).md",
+    "React (задачи).md",
     "Хуки.md",
     "SOLID.md",
     "TypeScript/Type vs Interface.md",
     "JavaScript/Логические операторы.md",
     "React/React Fiber.md",
     "Шаблоны проектирования.md",
-    "Вопросы(черновик).md",
     "Flexbox.md",
     "React/Отличие useRef от useState.md",
     "Тестирование.md",
@@ -204,8 +191,6 @@
     "JavaScript/Прототипное наследование.md",
     "JavaScript/Связывание this.md",
     "SOP.md",
-    "Браузер/CORS.md",
-    "JavaScript/Promise Api.md",
     "Css",
     "Vue",
     "TypeScript",

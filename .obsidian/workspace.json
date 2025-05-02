@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "dbbd3f1395eb620d",
+        "id": "b946ef21c6ba3151",
         "type": "tabs",
         "children": [
           {
-            "id": "12338f96b2b3a4ab",
+            "id": "929503b3783d03d4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript/Ссылки.md",
+                "file": "Css/Вопросы.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ссылки"
+              "title": "Вопросы"
             }
           }
         ]
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Файловый менеджер"
             }
           },
           {
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 325.5
+    "width": 340.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -155,20 +155,20 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "12338f96b2b3a4ab",
+  "active": "929503b3783d03d4",
   "lastOpenFiles": [
     "Вопросы(черновик).md",
+    "TypeScript/Ссылки.md",
     "Алгоритмы/План.md",
     "Браузер/Событийный цикл.md",
-    "TypeScript/Ссылки.md",
     "Задачи.md",
     "React (задачи).md",
     "Хуки.md",

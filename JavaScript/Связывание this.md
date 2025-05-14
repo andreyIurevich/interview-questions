@@ -154,6 +154,27 @@ function foo() {
 foo(); // в режиме strict - undefined, в обычном - window
 ```
 
+```js
+const userService = {
+	currentFilter: 'active',
+	
+	users: [
+		{ name: 'Alex', status: 'active' },
+		{ name: 'Nick', status: 'deleted' },
+	],
+
+	getFilteredUsers: function () {
+		return this.users.filter(function (user) {
+			return user.status === this.currentFilter;
+		})
+	}
+}
+
+console.log(userService.getFilteredUsers()) // []
+// в режиме use strict this = undefined, будет ошибка TypeError
+```
+
+
 ```javascript
 1)
 'use strict';

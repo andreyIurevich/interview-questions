@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 293.5
+    "width": 289.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -163,9 +163,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4da9b9712360cd85",
+  "active": "b1cdf03bf8484584",
   "lastOpenFiles": [
     "JavaScript/Задачи.md",
+    "React/Throttle, debounce.md",
     "JavaScript/Связывание this.md",
     "JavaScript/Область видимости.md",
     "JavaScript/Замыкание.md",
@@ -191,7 +192,6 @@
     "JavaScript/Логические операторы.md",
     "React/React Fiber.md",
     "Css/Flexbox.md",
-    "React/Отличие useRef от useState.md",
     "Css",
     "Vue",
     "TypeScript",

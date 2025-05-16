@@ -11,10 +11,14 @@
             "id": "de330ee2941deb77",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Вопросы.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Новая вкладка"
+              "title": "Вопросы"
             }
           }
         ]
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5
+    "width": 343.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -161,6 +165,8 @@
   },
   "active": "b1cdf03bf8484584",
   "lastOpenFiles": [
+    "Css/Семантическая вёрстка.md",
+    "Вопросы.md",
     "React/Throttle, debounce.md",
     "React/Жизненный цикл компонентов.md",
     "JavaScript/Задачи.md",
@@ -186,8 +192,6 @@
     "React/React (задачи).md",
     "Архитектура/SOLID.md",
     "TypeScript/Type vs Interface.md",
-    "JavaScript/Логические операторы.md",
-    "React/React Fiber.md",
     "Css",
     "Vue",
     "TypeScript",

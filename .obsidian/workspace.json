@@ -4,11 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "9a8529f054f5c5d7",
+        "id": "00044fbdc998dbf6",
         "type": "tabs",
+        "dimension": 36.92307692307693,
         "children": [
           {
-            "id": "de330ee2941deb77",
+            "id": "e07f7780c0b195f0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,37 +21,29 @@
               "icon": "lucide-file",
               "title": "Вопросы"
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "73917ec76c211841",
+        "type": "tabs",
+        "dimension": 63.07692307692307,
+        "children": [
           {
-            "id": "f3c0dbbf8517d62a",
+            "id": "78168cd2a4db8868",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Css/Вопросы.md",
+                "file": "Браузер/HTTP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Вопросы"
-            }
-          },
-          {
-            "id": "fb3fedb2ce2514f5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Css/Селекторы.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Селекторы"
+              "title": "HTTP"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -192,12 +185,21 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "b1cdf03bf8484584",
+  "active": "78168cd2a4db8868",
   "lastOpenFiles": [
-    "Css/Вопросы.md",
-    "Css/Селекторы.md",
-    "Css/Семантическая вёрстка.md",
     "Вопросы.md",
+    "TypeScript/Типы данных.md",
+    "Браузер/HTTP.md",
+    "JavaScript/Строгий режим.md",
+    "JavaScript/Поднятие.md",
+    "JavaScript/Связывание this.md",
+    "JavaScript/Область видимости.md",
+    "JavaScript/Замыкание.md",
+    "JavaScript/let, var и const.md",
+    "Css/Flexbox.md",
+    "Css/Вопросы.md",
+    "Css/Семантическая вёрстка.md",
+    "Css/Селекторы.md",
     "React/Concurrent Mode.md",
     "React/Reconcilation.md",
     "React/React Fiber.md",
@@ -205,22 +207,13 @@
     "React/Throttle, debounce.md",
     "React/Жизненный цикл компонентов.md",
     "JavaScript/Задачи.md",
-    "JavaScript/Связывание this.md",
-    "JavaScript/Область видимости.md",
-    "JavaScript/Замыкание.md",
-    "JavaScript/Строгий режим.md",
     "Архитектура",
-    "Браузер/HTTP.md",
     "Архитектура/Module Federation.md",
-    "JavaScript/let, var и const.md",
-    "JavaScript/Поднятие.md",
     "Архитектура/Шаблоны проектирования.md",
     "Алгоритмы/Сортировка.md",
     "React/Хуки.md",
     "Архитектура/Тестирование.md",
     "Браузер/Браузерные события.md",
-    "Вопросы(черновик).md",
-    "TypeScript/Ссылки.md",
     "Css",
     "Vue",
     "TypeScript",

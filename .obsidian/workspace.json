@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 332.5
+    "width": 333.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -163,7 +163,7 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "44d56d154e2dc00e",
+  "active": "b1cdf03bf8484584",
   "lastOpenFiles": [
     "Архитектура/Шаблоны проектирования.md",
     "Архитектура/SOLID.md",

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Браузер/Безопасность.md",
+                "file": "Браузер/CSRF.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Безопасность"
+              "title": "CSRF"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "XSS"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -178,9 +177,10 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "a9c3715b87c10ebf",
+  "active": "3e0a2f85c538f986",
   "lastOpenFiles": [
-    "Браузер/Безопасность.md",
+    "Браузер/Способы хранения данных в браузере.md",
+    "Браузер/CSRF.md",
     "XSS.md",
     "Браузер/SOP.md",
     "JavaScript/Symbol.md",
@@ -193,7 +193,6 @@
     "Браузер/Перенаправление.md",
     "TypeScript/Interface vs Abstract class.md",
     "Браузер/Этапы отрисовки страниц.md",
-    "Браузер/Способы хранения данных в браузере.md",
     "Браузер/Событийный цикл.md",
     "Браузер/Браузерные события.md",
     "Браузер/HTTP.md",

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Браузер/SOP.md",
+                "file": "Браузер/HTTP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SOP"
+              "title": "HTTP"
             }
           }
         ]
@@ -166,8 +166,8 @@
   },
   "active": "3ff8248333104c3e",
   "lastOpenFiles": [
-    "Браузер/CORS.md",
     "Браузер/SOP.md",
+    "Браузер/CORS.md",
     "Браузер/CSRF.md",
     "Браузер/Способы хранения данных в браузере.md",
     "Браузер/Браузерные события.md",

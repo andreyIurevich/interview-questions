@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Архитектура/Архитектура фронтенд приложений.md",
+                "file": "Вопросы(черновик).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Архитектура фронтенд приложений"
+              "title": "Вопросы(черновик)"
+            }
+          },
+          {
+            "id": "62f4322cbacc693f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mock данные.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Mock данные"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 313.5
+    "width": 305.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -179,11 +193,14 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "72557987c2fc0eab",
+  "active": "62f4322cbacc693f",
   "lastOpenFiles": [
-    "JavaScript/Замыкание.md",
-    "Архитектура/Архитектура фронтенд приложений.md",
     "Вопросы(черновик).md",
+    "Mock данные.md",
+    "Без названия",
+    "Браузер/HTTP.md",
+    "Архитектура/Архитектура фронтенд приложений.md",
+    "JavaScript/Замыкание.md",
     "TypeScript/Type Challenges.md",
     "TypeScript/Ссылки.md",
     "Css/Вопросы.md",
@@ -196,7 +213,6 @@
     "Браузер/Rest Api.md",
     "Браузер/Этапы отрисовки страниц.md",
     "Браузер/Этапы загрузки страниц.md",
-    "Браузер/HTTP.md",
     "Браузер/CORS.md",
     "Браузер/CSRF.md",
     "Браузер/Браузерные события.md",
@@ -206,7 +222,6 @@
     "JavaScript/Поднятие.md",
     "JavaScript/Связывание this.md",
     "JavaScript/Область видимости.md",
-    "JavaScript/let, var и const.md",
     "Архитектура",
     "Css",
     "Vue",

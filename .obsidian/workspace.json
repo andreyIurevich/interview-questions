@@ -11,10 +11,14 @@
             "id": "618eba522241b2c8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Вопросы(черновик).md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Новая вкладка"
+              "title": "Вопросы(черновик)"
             }
           }
         ]
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5
+    "width": 311.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -160,10 +164,14 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "b1cdf03bf8484584",
+  "active": "618eba522241b2c8",
   "lastOpenFiles": [
-    "Без названия.md",
+    "Css/Вопросы.md",
+    "Css/Flexbox.md",
+    "Css/Семантическая вёрстка.md",
+    "Css/Селекторы.md",
     "Вопросы(черновик).md",
+    "Без названия.md",
     "Браузер/XSS.md",
     "React/Отличие Context Api от Redux.md",
     "React/Хуки.md",
@@ -174,7 +182,6 @@
     "JavaScript/Замыкание.md",
     "TypeScript/Type Challenges.md",
     "TypeScript/Ссылки.md",
-    "Css/Вопросы.md",
     "JavaScript/Задачи.md",
     "JavaScript/Promise Api.md",
     "Браузер/Событийный цикл.md",
@@ -186,9 +193,6 @@
     "Браузер/Этапы загрузки страниц.md",
     "Браузер/CORS.md",
     "Браузер/CSRF.md",
-    "Браузер/Браузерные события.md",
-    "Вопросы.md",
-    "Архитектура/Шаблоны проектирования.md",
     "Архитектура",
     "Css",
     "Vue",

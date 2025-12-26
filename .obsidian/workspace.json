@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 311.5
+    "width": 277.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -164,14 +164,16 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "618eba522241b2c8",
+  "active": "b1cdf03bf8484584",
   "lastOpenFiles": [
+    "React/Portal.md",
+    "Вопросы(черновик).md",
+    "React/Suspense.md",
+    "Браузер/Этапы отрисовки страниц.md",
     "Css/Вопросы.md",
     "Css/Flexbox.md",
     "Css/Семантическая вёрстка.md",
     "Css/Селекторы.md",
-    "Вопросы(черновик).md",
-    "Без названия.md",
     "Браузер/XSS.md",
     "React/Отличие Context Api от Redux.md",
     "React/Хуки.md",
@@ -189,10 +191,8 @@
     "Браузер/SOP.md",
     "React/Throttle, debounce.md",
     "Браузер/Rest Api.md",
-    "Браузер/Этапы отрисовки страниц.md",
     "Браузер/Этапы загрузки страниц.md",
     "Браузер/CORS.md",
-    "Браузер/CSRF.md",
     "Архитектура",
     "Css",
     "Vue",

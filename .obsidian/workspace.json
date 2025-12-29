@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Браузер/Этапы отрисовки страниц.md",
+                "file": "JavaScript/Анимации.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Этапы отрисовки страниц"
+              "title": "Анимации"
             }
           }
         ]
@@ -166,10 +166,10 @@
   },
   "active": "618eba522241b2c8",
   "lastOpenFiles": [
+    "Браузер/Этапы отрисовки страниц.md",
     "Вопросы(черновик).md",
     "React/Portal.md",
     "React/Suspense.md",
-    "Браузер/Этапы отрисовки страниц.md",
     "Css/Вопросы.md",
     "Css/Flexbox.md",
     "Css/Семантическая вёрстка.md",

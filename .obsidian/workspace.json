@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Вопросы(черновик).md",
+                "file": "Браузер/Этапы отрисовки страниц.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Вопросы(черновик)"
+              "title": "Этапы отрисовки страниц"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277.5
+    "width": 244.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -164,10 +164,10 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "b1cdf03bf8484584",
+  "active": "618eba522241b2c8",
   "lastOpenFiles": [
-    "React/Portal.md",
     "Вопросы(черновик).md",
+    "React/Portal.md",
     "React/Suspense.md",
     "Браузер/Этапы отрисовки страниц.md",
     "Css/Вопросы.md",

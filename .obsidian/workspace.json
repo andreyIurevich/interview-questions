@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/Анимации.md",
+                "file": "Браузер/Анимации.md",
                 "mode": "source",
                 "source": false
               },
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 244.5
+    "width": 252.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -164,7 +164,7 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "618eba522241b2c8",
+  "active": "b1cdf03bf8484584",
   "lastOpenFiles": [
     "Браузер/Этапы отрисовки страниц.md",
     "Вопросы(черновик).md",

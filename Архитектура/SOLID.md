@@ -6,8 +6,87 @@
 - I: Interface Segregation Principle (Принцип разделения интерфейса).
 - D: Dependency Inversion Principle (Принцип инверсии зависимостей).
 
-**Принцип единственной ответственности**
-_Каждый класс должен решать лишь одну задачу._
+#### Принцип единственной ответственности
+_Класс должен иметь только одну причину для изменения_.
+
+##### Применение
+Компонент нарушающий принцип SRP
+```jsx
+export function UserProfile() {
+  const [user, setUser] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetchUser()
+      .then(data => {
+        setUser(data);
+        setIsLoading(false);
+      })
+      .catch(err => {
+        setError(err);
+        setIsLoading(false);
+      });
+  }, []);
+
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error.message}</div>;
+  if (!user) return <div>No user found</div>;
+
+  return (
+    <div>
+      <h1>{user.name}</h1>
+      <p>{user.email}</p>
+    </div>
+  );
+}
+```
+
+исправления с учёном принципа SRP:
+```jsx
+export function useUser() {
+  const [user, setUser] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetchUser()
+      .then(data => {
+        setUser(data);
+        setIsLoading(false);
+      })
+      .catch(err => {
+        setError(err);
+        setIsLoading(false);
+      });
+  }, []);
+
+  return { user, isLoading, error };
+}
+
+export function UserProfileView({ user, isLoading, error }) {
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error.message}</div>;
+  if (!user) return <div>No user found</div>;
+
+  return (
+    <div>
+      <h1>{user.name}</h1>
+      <p>{user.email}</p>
+    </div>
+  );
+}
+
+export function UserProfileContainer() {
+  const { user, isLoading, error } = useUser();
+  return <UserProfileView user={user} isLoading={isLoading} error={error} />;
+}
+```
+
+преимущества данного подхода:
+1. Простота внесения изменений
+2. Повторное использование компонентов
+3. Упрощение поддержки и повышение читаемости
 
 **Принцип открытости-закрытости**
 _Программные сущности (классы, модули, функции) должны быть открыты для расширения, но не для модификации._

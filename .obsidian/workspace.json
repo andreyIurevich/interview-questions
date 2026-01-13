@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/Event Loop.md",
+                "file": "Вопросы.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Event Loop"
+              "title": "Вопросы"
+            }
+          },
+          {
+            "id": "8b318a2918649ce7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript/let, var и const.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "let, var и const"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 284.5
+    "width": 328.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -179,8 +193,9 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "b1cdf03bf8484584",
+  "active": "8b318a2918649ce7",
   "lastOpenFiles": [
+    "Вопросы.md",
     "Браузер/Событийный цикл.md",
     "JavaScript/Event Loop.md",
     "Архитектура/SOLID.md",
@@ -207,7 +222,6 @@
     "JavaScript/Задачи.md",
     "JavaScript/Promise Api.md",
     "Браузер/Способы хранения данных в браузере.md",
-    "Браузер/SOP.md",
     "Архитектура",
     "Css",
     "Vue",

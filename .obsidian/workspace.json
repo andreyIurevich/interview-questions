@@ -8,49 +8,34 @@
         "type": "tabs",
         "children": [
           {
-            "id": "06145187b6825485",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Браузер/Событийный цикл.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Событийный цикл"
-            }
-          },
-          {
             "id": "21745b5e1d34bcc1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Вопросы.md",
+                "file": "Браузер/Способы хранения данных в браузере.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Вопросы"
+              "title": "Способы хранения данных в браузере"
             }
           },
           {
-            "id": "8b318a2918649ce7",
+            "id": "f90c196d4d4892fb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/let, var и const.md",
+                "file": "Браузер/Этапы отрисовки страниц.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "let, var и const"
+              "title": "Этапы отрисовки страниц"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -107,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 328.5
+    "width": 281.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -193,13 +178,23 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "8b318a2918649ce7",
+  "active": "21745b5e1d34bcc1",
   "lastOpenFiles": [
     "Вопросы.md",
+    "Браузер/Этапы загрузки страниц.md",
+    "Браузер/Этапы отрисовки страниц.md",
+    "Архитектура/Шаблоны проектирования.md",
+    "Css/Семантическая вёрстка.md",
+    "Css/Селекторы.md",
+    "JavaScript/Строгий режим.md",
+    "JavaScript/Поднятие.md",
+    "JavaScript/Область видимости.md",
+    "JavaScript/Связывание this.md",
+    "JavaScript/Замыкание.md",
+    "JavaScript/let, var и const.md",
     "Браузер/Событийный цикл.md",
     "JavaScript/Event Loop.md",
     "Архитектура/SOLID.md",
-    "Браузер/Этапы отрисовки страниц.md",
     "DOMContentLoaded.md",
     "Вопросы(черновик).md",
     "Браузер/Анимации.md",
@@ -207,21 +202,11 @@
     "React/Suspense.md",
     "Css/Вопросы.md",
     "Css/Flexbox.md",
-    "Css/Семантическая вёрстка.md",
-    "Css/Селекторы.md",
     "Браузер/XSS.md",
     "React/Отличие Context Api от Redux.md",
     "React/Хуки.md",
     "JavaScript/Mock данные.md",
     "Без названия",
-    "Браузер/HTTP.md",
-    "Архитектура/Архитектура фронтенд приложений.md",
-    "JavaScript/Замыкание.md",
-    "TypeScript/Type Challenges.md",
-    "TypeScript/Ссылки.md",
-    "JavaScript/Задачи.md",
-    "JavaScript/Promise Api.md",
-    "Браузер/Способы хранения данных в браузере.md",
     "Архитектура",
     "Css",
     "Vue",

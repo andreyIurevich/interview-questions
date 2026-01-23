@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 358.5
+    "width": 286.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -166,6 +166,8 @@
   },
   "active": "7a854a0e0d1ad32a",
   "lastOpenFiles": [
+    "Браузер/SOP.md",
+    "Браузер/CORS.md",
     "Браузер/Безопасность/Clickjacking.md",
     "Браузер/Безопасность",
     "Браузер/Безопасность/CSRF.md",
@@ -191,7 +193,6 @@
     "Браузер/Анимации.md",
     "React/Portal.md",
     "React/Suspense.md",
-    "Css/Вопросы.md",
     "Архитектура",
     "Css",
     "Vue",

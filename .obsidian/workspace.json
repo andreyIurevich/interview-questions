@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Браузер/CORS.md",
+                "file": "JavaScript/Задачи.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CORS"
+              "title": "Задачи"
             }
           }
         ]
@@ -166,8 +166,8 @@
   },
   "active": "7a854a0e0d1ad32a",
   "lastOpenFiles": [
-    "Браузер/SOP.md",
     "Браузер/CORS.md",
+    "Браузер/SOP.md",
     "Браузер/Безопасность/Clickjacking.md",
     "Браузер/Безопасность",
     "Браузер/Безопасность/CSRF.md",

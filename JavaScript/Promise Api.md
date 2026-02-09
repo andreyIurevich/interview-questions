@@ -236,3 +236,34 @@ Promise
   
 // Вывод: a2d1d3
 ```
+
+```javascript
+const fn = async (n) => {
+	await new Promise(res => setTimeout(res, 100));
+	return n*n;
+};
+
+asyncLimit(fn, 50)(5); // rejected: Превышен лимит времени исполнения
+asyncLimit(fn, 150)(5); // resolved: 25
+
+const fn2 = async (a, b) => {
+	await new Promise(res => setTimeout(res, 120));
+	return a + b;
+};
+
+asyncLimit(fn2, 100)(1, 2); // rejected: Превышен лимит времени исполнения
+asyncLimit(fn2, 150)(1, 2); // resolved: 3
+
+const asyncLimit = (fn, delay) => {
+	return async (...args) => {
+		return Promise.race([
+			fn(...args),
+			new Promise((_, reject) => {
+				setTimeout(() => reject("Timeout error"), delay)
+			})
+		])
+	}
+};
+
+```
+

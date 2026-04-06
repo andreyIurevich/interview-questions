@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git.md",
+                "file": "JavaScript/Связывание this.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git"
+              "title": "Связывание this"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 240.5
+    "width": 254.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -166,8 +166,9 @@
   },
   "active": "1a0089c47ef9d90a",
   "lastOpenFiles": [
-    "Браузер/DOMContentLoaded.md",
+    "JavaScript/Замыкание.md",
     "Git.md",
+    "Браузер/DOMContentLoaded.md",
     "Браузер/Политики безопасности/SOP.md",
     "Браузер/Этапы отрисовки страниц.md",
     "Браузер/Способы хранения данных в браузере.md",
@@ -193,7 +194,6 @@
     "React/React (задачи).md",
     "React/Ссылки.md",
     "JavaScript/Symbol.md",
-    "JavaScript/Клонирование.md",
     "Браузер/Безопасность",
     "Архитектура",
     "Css",

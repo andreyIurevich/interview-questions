@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a83ba9ae67ff6015",
+        "id": "c54caa8bdc88a8c5",
         "type": "tabs",
         "children": [
           {
-            "id": "1a0089c47ef9d90a",
+            "id": "753d37661175ebb6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/Связывание this.md",
+                "file": "Браузер/Политики безопасности/SOP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Связывание this"
+              "title": "SOP"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 254.5
+    "width": 256.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -164,36 +164,36 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "1a0089c47ef9d90a",
+  "active": "753d37661175ebb6",
   "lastOpenFiles": [
+    "Браузер/Политики безопасности/CSP.md",
+    "Браузер/Политики безопасности/CORS.md",
+    "Браузер/Этапы загрузки страниц.md",
+    "Браузер/HTTPS.md",
+    "Браузер/HTTP.md",
+    "JavaScript/Promise Api.md",
+    "Браузер/Событийный цикл.md",
+    "JavaScript/Event Loop.md",
+    "Css/Селекторы.md",
+    "Css/Семантическая вёрстка.md",
+    "Вопросы.md",
+    "JavaScript/Область видимости.md",
     "JavaScript/Замыкание.md",
+    "JavaScript/let, var и const.md",
+    "JavaScript/Строгий режим.md",
+    "JavaScript/Поднятие.md",
+    "JavaScript/Связывание this.md",
+    "JavaScript/Прототипное наследование.md",
+    "JavaScript/Часто используемые операторы и функции.md",
+    "JavaScript/Функциональное программирование.md",
     "Git.md",
     "Браузер/DOMContentLoaded.md",
     "Браузер/Политики безопасности/SOP.md",
     "Браузер/Этапы отрисовки страниц.md",
     "Браузер/Способы хранения данных в браузере.md",
     "Браузер/Виды атак/CSRF.md",
-    "Браузер/Виды атак/XSS.md",
-    "Браузер/Политики безопасности/CSP.md",
-    "Браузер/Политики безопасности/CORS.md",
     "Браузер/Политики безопасности",
     "Браузер/Виды атак",
-    "Браузер/HTTP.md",
-    "Вопросы.md",
-    "Вопросы(черновик).md",
-    "Браузер/HTTPS.md",
-    "JavaScript/Event Loop.md",
-    "React/Throttle, debounce.md",
-    "JavaScript/Вопросы.md",
-    "JavaScript/Прототипное наследование.md",
-    "TypeScript/Interface vs Abstract class.md",
-    "TypeScript/Type vs Interface.md",
-    "JavaScript/Задачи.md",
-    "JavaScript/Promise Api.md",
-    "TypeScript/Ссылки.md",
-    "React/React (задачи).md",
-    "React/Ссылки.md",
-    "JavaScript/Symbol.md",
     "Браузер/Безопасность",
     "Архитектура",
     "Css",

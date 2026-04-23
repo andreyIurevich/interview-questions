@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/Часто используемые операторы и функции.md",
+                "file": "Git.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Часто используемые операторы и функции"
+              "title": "Git"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 263.5
+    "width": 318.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -166,6 +166,13 @@
   },
   "active": "753d37661175ebb6",
   "lastOpenFiles": [
+    "React/Concurrent Mode.md",
+    "Git.md",
+    "Браузер/HTTPS.md",
+    "Браузер/HTTP.md",
+    "Браузер/Rest Api.md",
+    "TypeScript/Type Challenges.md",
+    "JavaScript/Часто используемые операторы и функции.md",
     "JavaScript/Promise Api.md",
     "JavaScript/Задачи.md",
     "Браузер/Виды атак/Clickjacking.md",
@@ -176,8 +183,6 @@
     "Браузер/Политики безопасности/SOP.md",
     "Браузер/Политики безопасности/CORS.md",
     "Браузер/Этапы загрузки страниц.md",
-    "Браузер/HTTPS.md",
-    "Браузер/HTTP.md",
     "Браузер/Событийный цикл.md",
     "JavaScript/Event Loop.md",
     "Css/Селекторы.md",
@@ -187,11 +192,6 @@
     "JavaScript/Замыкание.md",
     "JavaScript/let, var и const.md",
     "JavaScript/Строгий режим.md",
-    "JavaScript/Поднятие.md",
-    "JavaScript/Связывание this.md",
-    "JavaScript/Прототипное наследование.md",
-    "JavaScript/Часто используемые операторы и функции.md",
-    "JavaScript/Функциональное программирование.md",
     "Браузер/Политики безопасности",
     "Браузер/Виды атак",
     "Браузер/Безопасность",

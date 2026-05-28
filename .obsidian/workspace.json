@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript/Interface vs Abstract class.md",
+                "file": "JavaScript/Задачи.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Interface vs Abstract class"
+              "title": "Задачи"
             }
           }
         ]
@@ -166,13 +166,15 @@
   },
   "active": "e9e6df2c51605d06",
   "lastOpenFiles": [
-    "TypeScript/Типы данных.md",
-    "TypeScript/Ссылки.md",
-    "TypeScript/Type vs Interface.md",
+    "JavaScript/Часто используемые операторы и функции.md",
     "TypeScript/Type Challenges.md",
+    "TypeScript/Ссылки.md",
+    "TypeScript/Теория.md",
+    "TypeScript/Infer.md",
+    "TypeScript/Interface vs Abstract class.md",
+    "TypeScript/Type vs Interface.md",
     "React/React (задачи).md",
     "JavaScript/Задачи.md",
-    "JavaScript/Часто используемые операторы и функции.md",
     "React/React keys.md",
     "Архитектура React.md",
     "React/Virtual DOM.md",
@@ -190,8 +192,6 @@
     "Браузер/Виды атак/XSS.md",
     "Браузер/Виды атак/CSRF.md",
     "Браузер/Способы хранения данных в браузере.md",
-    "Браузер/Политики безопасности/SOP.md",
-    "Браузер/Политики безопасности/CORS.md",
     "Браузер/Политики безопасности",
     "Браузер/Виды атак",
     "Браузер/Безопасность",

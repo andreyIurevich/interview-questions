@@ -69,6 +69,167 @@ function bind(fn, obj) {
 3. Вызывается с контекстным объектом (неявное связывание) - исп. этот контекстный объект
 4. По умолчанию: undefined в режиме strict, глобальный объект в противном случае.
 
+---
+
+## Группа 1: Стрелочные vs Обычные функции
+
+Эти задачи проверяют главное отличие: у обычных функций `this` определяется в момент вызова, а у стрелочных — берется из внешнего лексического окружения (в момент создания).
+
+## Задача 1.1: Метод объекта как стрелка
+
+```javascript
+const user = {
+  name: 'Alex',
+  greet: () => {
+    console.log(this.name);
+  },
+  greetOld() {
+    console.log(this.name);
+  }
+};
+
+user.greet();    // Что выведет? (undefined / '' в браузере)
+user.greetOld(); // Что выведет? ('Alex')
+```
+
+- Почему: Стрелочная функция `greet` была создана в глобальной области видимости (сам объект `{...}` не создает новую область видимости). Поэтому её `this` ссылается на глобальный объект `window` / `global`.
+
+## Задача 1.2: Стрелка внутри обычной функции (Замыкание контекста)
+
+```javascript
+const filter = {
+  numbers:,
+  pattern: 2,
+  getFiltered() {
+    return this.numbers.filter(function(num) {
+      return num === this.pattern; // Обычная функция
+    });
+  },
+  getFilteredArrow() {
+    return this.numbers.filter((num) => {
+      return num === this.pattern; // Стрелочная функция
+    });
+  }
+};
+
+console.log(filter.getFiltered());      // [] (ошибка тихая, т.к. this.pattern === undefined)
+console.log(filter.getFilteredArrow()); // [2]
+```
+
+- Почему: Обычная функция внутри метода `filter` вызывается самим движком JS без контекста (`this` становится `window/undefined`). Стрелочная функция успешно берет `this` от родительского метода `getFilteredArrow` (который равен объекту `filter`).
+
+---
+
+## Группа 2: Потеря контекста (Context Loss)
+
+Самая частая ошибка в реальном коде, когда метод объекта присваивают в переменную или передают как колбэк.
+
+## Задача 2.1: Копирование метода в переменную
+
+```javascript
+const person = {
+  name: 'John',
+  sayName() {
+    console.log(this.name);
+  }
+};
+
+const johnSay = person.sayName;
+johnSay(); // Что выведет? (undefined / '' в браузере)
+```
+
+- Почему: Вызов `johnSay()` идет «без точки» — это обычный вызов функции. Контекст теряется, `this` равен глобальному объекту (или `undefined` в strict mode).
+
+## Задача 2.2: Метод внутри setTimeout
+
+```javascript
+const button = {
+  text: 'Click me',
+  click() {
+    console.log(this.text);
+  }
+};
+
+setTimeout(button.click, 1000); // Что выведет через секунду? (undefined)
+```
+
+- Почему: В `setTimeout` передается ссылка на функцию. Спустя секунду браузер вызывает её изнутри себя примерно так: `callback()`. Контекст `button` утерян.
+
+---
+
+## Группа 3: Явное связывание (`call`, `apply`, `bind`)
+
+Задачи на умение принудительно переопределять контекст и знание особенностей метода `bind`.
+
+## Задача 3.1: Повторный bind
+
+```javascript
+function show() {
+  console.log(this.value);
+}
+
+const obj1 = { value: 1 };
+const obj2 = { value: 2 };
+
+const bound = show.bind(obj1).bind(obj2);
+bound(); // Что выведет? (1)
+```
+
+- Почему: Метод `.bind()` создает новую обертку вокруг функции и жестко привязывает контекст один раз и навсегда. Все последующие вызовы `.bind()` или `.call()` на этой обертке уже не могут изменить её внутренний `this`.
+
+## Задача 3.2: Передача context-метода в call
+
+```javascript
+const car = {
+  brand: 'Tesla',
+  getBrand() {
+    return this.brand;
+  }
+};
+
+const bike = { brand: 'Ducati' };
+
+console.log(car.getBrand.call(bike)); // Что выведет? ('Ducati')
+```
+
+- Почему: Мы берем саму функцию `getBrand` и принудительно вызываем её в контексте объекта `bike` с помощью `.call()`.
+
+---
+
+## Группа 4: Продвинутые цепочки и Strict Mode
+
+Задачи на «внимательность», где комбинируются цепочки вызовов или проверяется режим `'use strict'`.
+
+## Задача 4.1: Строгий режим
+
+```javascript
+'use strict';
+function test() {
+  console.log(this);
+}
+test(); // Что выведет? (undefined)
+```
+
+- Почему: Без `'use strict'` обычный вызов функции подставляет вместо `this` объект `window/global`. В строгом режиме автоподстановка отключена, поэтому `this` остается `undefined`.
+
+## Задача 4.2: Цепочка вызовов (Метод возвращает функцию)
+
+```javascript
+const group = {
+  title: 'JS Theory',
+  showTitle() {
+    return function() {
+      console.log(this.title);
+    };
+  }
+};
+
+group.showTitle()(); // Что выведет? (undefined)
+```
+
+- Почему: Первый вызов `group.showTitle()` возвращает _новую обычную функцию_. А вот второй вызов `()` происходит уже без контекста (без точки). Чтобы это работало, внутреннюю функцию нужно делать стрелочной.
+
+---
 
 ##### Задачи
 

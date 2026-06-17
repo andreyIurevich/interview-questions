@@ -236,5 +236,46 @@ const user1: UserInstance = new User("John")
 // const user2: UserInstance = { name: "John" } type error
 ```
 
+Реализация MyUppercase
+
+```ts
+// 1. Создаем словарь сопоставления букв
+type LetterMap = {
+  'a': 'A', 'b': 'B', 'c': 'C', 'd': 'D', 'e': 'E', 'f': 'F',
+  'g': 'G', 'h': 'H', 'i': 'I', 'j': 'J', 'k': 'K', 'l': 'L',
+  'm': 'M', 'n': 'N', 'o': 'O', 'p': 'P', 'q': 'Q', 'r': 'R',
+  's': 'S', 't': 'T', 'u': 'U', 'v': 'V', 'w': 'W', 'x': 'X',
+  'y': 'Y', 'z': 'Z'
+};
+
+// 2. Вспомогательный тип для трансформации одного символа
+type TransformLetter<L extends string> = L extends keyof LetterMap 
+  ? LetterMap[L] 
+  : L; // Если символа нет в словаре (пробел, знак, заглавная), оставляем как есть
+
+// 3. Основной рекурсивный тип
+type MyUppercase<T extends string> = T extends `${infer First}${infer Rest}`
+  ? `${TransformLetter<First>}${MyUppercase<Rest>}`
+  : T;
+
+// Проверяем работу:
+type Result = MyUppercase<"hello world!">; // "HELLO WORLD!"
+
+```
+
+Реализация MyOmit
+
+```ts
+type MyOmit<T, K extends keyof T> = {
+	[P in keyof T as P extends K ? never : P]: T[P]
+}
+```
+
+MyReturntype
+
+```ts
+type MyReturnType<T> = T extends (...args: any[]) => infer R ? R : never;
+```
+
 
 

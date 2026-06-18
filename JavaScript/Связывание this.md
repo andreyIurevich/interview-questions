@@ -613,3 +613,65 @@ user2.funcArrow(); // user
 user2.arrowFunc(); // user2
 user2.arrowArrow(); // window
 ```
+
+```js
+var a = {
+	name: 'a',
+	foo: function () {
+		console.log(this.name);
+	}
+};
+
+a.foo(); // a
+
+var bar = a.foo;
+
+bar(); // undefined
+
+var b = {
+	name: 'b'
+};
+
+b.foo = a.foo;
+
+b.foo(); // b
+
+var c = {
+	name: 'c'
+};
+
+bar.call(c, 1, 2); // c
+a.foo.apply(b, [1, 2]); // b
+a.foo.bind(b).call(c); // b
+a.foo.bind(b).bind(c)(); // b
+```
+
+```js
+var a = {
+  firstName: "Bill",
+  lastName: "Ivanov",
+  sayName: function () {
+    console.log(this.firstName);
+  },
+  sayLastName: () => {
+    console.log(this.lastName);
+  }
+};
+
+a.sayName(); // "Bill"
+
+var b = a.sayName;
+
+b(); // undefined
+
+a.sayName.bind({ firstName: "Boris" })(); // "Boris"
+
+a.sayName(); // "Bill"
+
+a.sayLastName(); // undefined
+
+a.sayName.bind({ firstName: "Boris" }).bind({ firstName: "Tom" })(); // "Boris"
+a.sayLastName.bind({ lastName: "Petrov" })(); // undefined
+```
+
+

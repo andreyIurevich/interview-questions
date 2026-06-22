@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 273.5
+    "width": 279.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -166,6 +166,8 @@
   },
   "active": "962b9034a6c99a5f",
   "lastOpenFiles": [
+    "React/Throttle, debounce.md",
+    "JavaScript/Promise Api.md",
     "JavaScript/Область видимости.md",
     "JavaScript/Связывание this.md",
     "JavaScript/Замыкание.md",
@@ -190,8 +192,6 @@
     "Браузер/Виды атак/Clickjacking.md",
     "Браузер/Виды атак/CSRF.md",
     "Браузер/Способы хранения данных в браузере.md",
-    "Браузер/Политики безопасности/SOP.md",
-    "Браузер/Политики безопасности/CSP.md",
     "Браузер/Политики безопасности",
     "Браузер/Виды атак",
     "Браузер/Безопасность",

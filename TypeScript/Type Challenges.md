@@ -277,5 +277,96 @@ MyReturntype
 type MyReturnType<T> = T extends (...args: any[]) => infer R ? R : never;
 ```
 
+---
+
+Типизируйте обработчик API ответов для Hack Frontend. Функция должна принимать URL и возвращать Promise с типизированными данными.
+
+``
+```ts
+// Discriminated Union для API ответа
+
+type ApiResponse<T> =
+	| { success: true; data: T }
+	| { success: false; error: { message: string; code: number } }
+
+// Generic функция для fetch с типизацией
+async function fetchHackFrontendAPI<T>(url: string): Promise<ApiResponse<T>> {
+try {
+	const response = await fetch(`https://hackfrontend.com${url}`)
+	const data = await response.json()
+
+	return { success: true, data }
+} catch (error) {
+	return {
+		success: false,
+		error: {
+			message: error instanceof Error ? error.message : 'Unknown error',
+			code: 500
+		}
+	}
+}
+
+}
+
+async function getUserData() {
+	const response = await fetchHackFrontendAPI<HackFrontendUser>("/api/user")
+
+	if (response.success) {
+		console.log(response.data.name) // ✅ data доступен
+		console.log(response.error) // ❌ error не существует!
+	} else {
+		console.log(response.error.message) // ✅ error доступен
+		console.log(response.data) // ❌ data не существует!
+	}
+}
+```
+
+---
+
+Реализуйте тип DeepReadonly, который делает все свойства объекта (включая вложенные) readonly. Используйте generics и conditional types.
+
+```ts
+type DeepReadonly<T> = {
+	readonly [K in keyof T]: T[K] extends object ? T[K] extends Function
+	? T[K] : DeepReadonly<T[K]> : T[K]
+}
+```
+
+```ts
+type DeepReadonly<T> = {
+  readonly [P in keyof T]: T[P] extends Function
+    ? T[P]
+    : T[P] extends Array<infer U> // Если это массив, извлекаем тип его элементов (U)
+    ? ReadonlyArray<DeepReadonly<U>> // Делаем readonly-массив, а элементы отправляем в рекурсию
+    : T[P] extends object
+    ? DeepReadonly<T[P]>
+    : T[P];
+};
+```
+
+---
+
+Создайте generic PromiseAll, который возвращает тип массива resolved значений из массива Promise'ов.
+
+```ts
+type PromiseAll<T extends readonly unknown[]> = {
+	[K in keyof T]: T[K] extends Promise<infer R> ? R : T[K]
+}
+```
+
+Mapped Types умеют перебирать не только свойства объектов, но и **элементы массивов/кортежей**, сохраняя их структуру.
+
+```ts
+type ProcessArray<T extends any[]> = {
+  [P in keyof T]: ... // перебираем индексы массива ("0", "1", и т.д.)
+}
+```
+
+То на выходе TypeScript автоматически вернет **массив (кортеж)** точно такой же длины, как и исходный `T`.
+
+
+
+
+
 
 

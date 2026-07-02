@@ -225,16 +225,28 @@ Promise
 ```javascript
 Promise
   .reject('a')
-  .then(p => p + '1', p => p + '2')
+  .then(p => p + '1', p => p + '2') // a2
   .catch(p => p + 'b')
   .catch(p => p + 'c')
-  .then(p => p + 'd1')
+  .then(p => p + 'd1') // a2d1
   .then('d2')
-  .then(p => p + 'd3')
+  .then(p => p + 'd3') // a2d1d3
   .finally(p => p + 'e')
   .then(p => console.log(p));
   
 // Вывод: a2d1d3
+```
+
+```js
+Promise.resolve(1)
+	.then(x => x + 1)
+	.then(x => { throw x })
+	.then(x => console.log(x))
+	.catch(err => console.log(err)) // 2
+	.then(x => Promise.resolve(1))
+	.catch(err => console.log(err))
+	.then(x => console.log(x)) // 1
+// Вывод: 2 1
 ```
 
 ```javascript
@@ -525,3 +537,95 @@ const searchRes = await search();
 console.log('-> searchRes ', searchRes);
 ```
 
+---
+
+Реализуйте `asyncMap(array, asyncFn)` - аналог Array.map для async функций.
+
+**Задача:**  
+Обычный `Array.map()` не умеет ждать async функции. Нужно реализовать версию, которая:
+
+- Применяет async функцию к каждому элементу массива
+- Дожидается выполнения всех промисов
+- Возвращает массив результатов в том же порядке
+- Выполняет все задачи параллельно (не последовательно!)
+
+```js
+async function asyncMap(array, asyncFn) {
+	return Promise.all(array.map(asyncFn));
+}
+```
+
+`Promise.all` ждет, пока _все_ промисы перейдут в состояние `fulfilled` (выполнено). После этого он возвращает один новый промис, который разрешается в массив чистых результатов.
+
+Подобная задача AsyncFilter:
+
+```js
+async function asyncFilter(array, asyncCallback) {
+  const masks = await Promise.all(array.map(asyncCallback));
+  return array.filter((_, index) => masks[index]);
+}
+
+const result = await asyncFilter([1, 2, 3, 4], async (x) => x % 2 === 0);
+```
+
+---
+Реализуйте метод `promiseFinally(promise, onFinally)`, который вызывается всегда.
+
+**Что такое finally?**  
+Это колбэк, который выполняется ВСЕГДА - независимо от того, промис завершился успешно или с ошибкой. Используется для очистки ресурсов.
+
+**Требования:**
+
+- Принимает промис и функцию onFinally
+- Выполняет onFinally после завершения промиса (в любом случае)
+- Не изменяет результат промиса (resolve остаётся resolve, reject остаётся reject)
+- Возвращает промис с оригинальным результатом
+
+```js
+function promiseFinally(promise, onFinally) {
+	return new Promise((resolve, reject) => {
+		promise
+			.then((res) => {
+				resolve(res);
+			})
+			.catch((error) => {
+				reject(error);
+			})
+			.finally(onFinally);
+	});
+}
+```
+
+---
+
+Реализуйте `cachePromise(fn)` - кэширует результаты async функции (мемоизация).
+
+**Что такое кэширование/мемоизация?**  
+Сохранение результатов выполнения функции, чтобы при повторном вызове с теми же аргументами вернуть сохранённый результат вместо повторного выполнения.
+
+**Требования:**
+
+- Принимает async функцию и возвращает обёрнутую версию
+- При первом вызове с аргументами - выполняет функцию и сохраняет результат
+- При повторном вызове с теми же аргументами - возвращает сохранённый результат
+- Ключ кэша = JSON.stringify(arguments)
+
+```js
+function cachePromise(fn) {
+	const cache = new Map();
+
+	return async function(...args) {
+		const key = JSON.stringify(args);
+
+		if (cache.has(key)) {
+			return cache.get(key);
+		}
+	
+		const result = await fn(...args);
+
+		cache.set(key, result);
+
+		return result;
+	};
+}
+```

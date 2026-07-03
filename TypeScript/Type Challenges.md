@@ -364,7 +364,72 @@ type ProcessArray<T extends any[]> = {
 
 То на выходе TypeScript автоматически вернет **массив (кортеж)** точно такой же длины, как и исходный `T`.
 
+---
 
+Создайте набор utility types для работы с формами в React-приложении.
+
+- **FormData** — делает все поля optional и добавляет isDirty
+- **Sanitize<T, K>** — удаляет указанные ключи и делает остальные readonly
+- **MergeForms<A, B>** — объединяет формы: A required, B optional, общие intersection
+
+```ts
+type MyFormData<T> = {
+	[P in keyof T]+?: T[P]
+} & {
+	isDirty: boolean
+}
+
+type Sanitize<T, K extends keyof T> = {
+	readonly [P in keyof T as P extends K ? never : P]: T[P]
+}
+
+type MergeForms<A, B> =
+	Pick<A, Exclude<keyof A, keyof B>> &
+	Partial<Pick<B, Exclude<keyof B, keyof A>>> &
+	{ [P in Extract<keyof A, keyof B>]: A[P] & B[P] }
+```
+
+---
+
+Создайте типизированный EventEmitter для Hack Frontend приложения. События должны быть строго типизированы с правильными payload типами.
+
+**Требования:**
+
+- on/emit методы с автокомплитом событий
+- Payload типы должны соответствовать событию
+- Невозможно emit с неправильным payload
+
+```ts
+type HackFrontendEvents = {
+	courseCompleted: { courseId: string; userId: number; hackFrontendPro: boolean }
+	lessonStarted: { lessonId: string; timestamp: number }
+	userLoggedIn: { userId: number; hackFrontendEmail: string }
+}
+
+class EventEmitter<Events extends Record<string, any>> {
+	private listeners: {
+		[P in keyof Events]?: Array<(payload: Events[P]) => void>
+	} = {};
+
+on<K extends keyof Events>(eventName: K, handler: (v: Events[K]) => void) {
+	if (!this.listeners[eventName]) {
+		this.listeners[eventName] = []
+	}
+
+	this.listeners[eventName]?.push(handler);
+}
+
+emit<K extends keyof Events>(eventName: K, payload: Events[K]) {
+	if (this.listeners[eventName]?.length) {
+		this.listeners[eventName]?.forEach(handler => {
+			handler(payload);
+		})
+	}
+}
+}
+
+const emitter = new EventEmitter<HackFrontendEvents>();
+```
 
 
 

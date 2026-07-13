@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/Теория/Архитектура React.md",
+                "file": "Браузер/Политики безопасности/CORS(updated).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Архитектура React"
+              "title": "CORS(updated)"
             }
           }
         ],
@@ -135,7 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 312.5
+    "width": 315.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -223,8 +223,10 @@
   },
   "active": "4f809e590dc30275",
   "lastOpenFiles": [
-    "React/Теория/Virtual DOM.md",
+    "Браузер/Политики безопасности/CORS.md",
+    "Браузер/Политики безопасности/CORS(updated).md",
     "React/Теория/Архитектура React.md",
+    "React/Теория/Virtual DOM.md",
     "React/Теория/Хуки/Теория.md",
     "React/Теория/Хуки/Отличие useEffect от useLayout.md",
     "React/Теория/Хуки",
@@ -250,7 +252,6 @@
     "React/Практика",
     "React/Теория",
     "React/Теория/React keys.md",
-    "TypeScript/Type Challenges.md",
     "Браузер/Политики безопасности",
     "Браузер/Виды атак",
     "Браузер/Безопасность",

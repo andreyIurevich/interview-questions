@@ -716,3 +716,25 @@ user.fixedDelayedGreet(); // 'Алексей'
     
 4. `user.fixedDelayedGreet()` ➡️ `'Привет, я Алексей'` (через 1 сек)  
     И снова ты абсолютно прав: стрелочная функция заимствует `this` из родительской функции. Родительская функция `fixedDelayedGreet` была вызвана как метод объекта `user`, поэтому её `this` равнялся объекту `user`. Стрелка, родившись внутри этого метода, намертво зафиксировала этот контекст в своем замыкании.
+
+```js
+const BoundUser = User.bind({name: "Bob"}, "Alice");
+
+const user = new BoundUser();
+
+console.log(user.name);
+```
+
+```js
+function User(name) {
+  this.name = name;
+}
+
+const BoundUser = User.bind(null, "Alice");
+
+const user = new BoundUser(); // аналогично new User("Alice")
+
+console.log(user.name);
+```
+
+`bind` фиксирует аргумент `"Alice"`, но фиксированный `this` при вызове через `new` игнорируется. Конструктор получает новый созданный объект как `this`, поэтому поле `name` записывается в него.

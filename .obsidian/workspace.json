@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/Мат операторы.md",
+                "file": "Браузер/Событийный цикл.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Мат операторы"
+              "title": "Событийный цикл"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5
+    "width": 279.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -166,22 +166,22 @@
   },
   "active": "752fccce293b281b",
   "lastOpenFiles": [
-    "JavaScript/Связывание this.md",
-    "JavaScript/Часто используемые операторы и функции.md",
+    "JavaScript/Event Loop.md",
     "План по задачам js.md",
-    "JavaScript/Внутренние операции.md",
     "JavaScript/Поднятие.md",
+    "JavaScript/Область видимости.md",
+    "JavaScript/Замыкание.md",
+    "JavaScript/Связывание this.md",
+    "JavaScript/Мат операторы.md",
+    "JavaScript/Часто используемые операторы и функции.md",
+    "JavaScript/Внутренние операции.md",
     "JavaScript/Symbol.md",
     "Браузер/Событийный цикл.md",
-    "JavaScript/Event Loop.md",
     "Git.md",
     "JavaScript/Прототипное наследование.md",
     "JavaScript/let, var и const.md",
     "JavaScript/Протопиты.md",
-    "JavaScript/Мат операторы.md",
-    "JavaScript/Замыкание.md",
     "JavaScript/Задачи.md",
-    "JavaScript/Область видимости.md",
     "Браузер/Компоненты браузера.md",
     "Css/Каскадность.md",
     "Css/Специфичность селекторов.md",

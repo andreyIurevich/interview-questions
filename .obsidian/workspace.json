@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "e854db717cdcfd11",
+        "id": "174adc52fe8b869f",
         "type": "tabs",
         "children": [
           {
-            "id": "89945e048c310aee",
+            "id": "5483ce8432f58a11",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Алгоритмы/Dynamic Programming.md",
+                "file": "Алгоритмы/Hash Map.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dynamic Programming"
-            }
-          },
-          {
-            "id": "3b3409e23d4abef2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Алгоритмы/Two pointers.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Two pointers"
+              "title": "Hash Map"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -95,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 224.5
+    "width": 227.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -181,8 +166,12 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "3b3409e23d4abef2",
+  "active": "5483ce8432f58a11",
   "lastOpenFiles": [
+    "JavaScript/Задачи.md",
+    "Алгоритмы/Hash Map.md",
+    "React/Практика/Вывод эффектов.md",
+    "React/Практика/React (задачи).md",
     "Алгоритмы/Dynamic Programming.md",
     "Алгоритмы/Two pointers.md",
     "Алгоритмы/Массивы.md",
@@ -195,7 +184,6 @@
     "Браузер/Компоненты браузера.md",
     "Git.md",
     "План по задачам js.md",
-    "React/Практика/Вывод эффектов.md",
     "React/Теория/Архитектура React.md",
     "React/Теория/Virtual DOM.md",
     "Без названия.canvas",
@@ -207,9 +195,6 @@
     "JavaScript/Протопиты.md",
     "JavaScript/Поднятие.md",
     "JavaScript/Область видимости.md",
-    "JavaScript/Мат операторы.md",
-    "JavaScript/Логические операторы.md",
-    "JavaScript/Замыкание.md",
     "React/Теория/Хуки",
     "React/Практика",
     "React/Теория",

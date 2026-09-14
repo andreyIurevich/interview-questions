@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/Внутренние операции.md",
+                "file": "JavaScript/Symbol.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Внутренние операции"
+              "title": "Symbol"
             }
           }
         ]
@@ -80,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 232.5
+    "width": 259.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -168,8 +168,8 @@
   },
   "active": "8fc35b37995a7473",
   "lastOpenFiles": [
-    "План по задачам js.md",
     "JavaScript/Внутренние операции.md",
+    "План по задачам js.md",
     "TypeScript/Type Challenges.md",
     "System Design.md",
     "Git.md",

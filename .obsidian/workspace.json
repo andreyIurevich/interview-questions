@@ -11,10 +11,14 @@
             "id": "8fc35b37995a7473",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript/Внутренние операции.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Новая вкладка"
+              "title": "Внутренние операции"
             }
           }
         ]
@@ -76,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 240.5
+    "width": 232.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -164,8 +168,9 @@
   },
   "active": "8fc35b37995a7473",
   "lastOpenFiles": [
-    "TypeScript/Type Challenges.md",
     "План по задачам js.md",
+    "JavaScript/Внутренние операции.md",
+    "TypeScript/Type Challenges.md",
     "System Design.md",
     "Git.md",
     "JavaScript/Map, Set.md",
@@ -190,7 +195,6 @@
     "React/Практика/Разное.md",
     "React/Теория/Жизненный цикл компонентов.md",
     "JavaScript/Функциональное программирование.md",
-    "JavaScript/Прототипное наследование.md",
     "React/Теория/Хуки",
     "React/Практика",
     "React/Теория",

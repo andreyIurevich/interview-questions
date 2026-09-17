@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript/Type vs Interface.md",
+                "file": "Git/Анатомия git.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Type vs Interface"
+              "title": "Анатомия git"
             }
           }
         ]
@@ -80,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 239.5
+    "width": 215.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -168,8 +168,11 @@
   },
   "active": "300870d1a420104b",
   "lastOpenFiles": [
-    "TypeScript/Mapped Types.md",
+    "Git/Общие вопросы.md",
+    "Git/Анатомия git.md",
+    "Git",
     "TypeScript/Type vs Interface.md",
+    "TypeScript/Mapped Types.md",
     "TypeScript/Операторы.md",
     "TypeScript/Ссылки.md",
     "TypeScript/Система типов данных.md",
@@ -180,7 +183,6 @@
     "TypeScript/Conditional Types.md",
     "TypeScript/Type Challenges.md",
     "TypeScript/Interface vs Abstract class.md",
-    "Git.md",
     "JavaScript/Поднятие.md",
     "JavaScript/Область видимости.md",
     "JavaScript/Symbol.md",
@@ -193,7 +195,6 @@
     "React/Практика/React (задачи).md",
     "Алгоритмы/Dynamic Programming.md",
     "Алгоритмы/Массивы.md",
-    "Алгоритмы/План.md",
     "Без названия.canvas",
     "React/Теория/Хуки",
     "React/Практика",
@@ -203,7 +204,6 @@
     "Браузер/Безопасность",
     "Архитектура",
     "Css",
-    "Vue",
-    "TypeScript"
+    "Vue"
   ]
 }

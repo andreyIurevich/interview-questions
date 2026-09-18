@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/Анатомия git.md",
+                "file": "Git/Общие вопросы.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Анатомия git"
+              "title": "Общие вопросы"
             }
           }
         ]
@@ -80,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 215.5
+    "width": 216.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -168,8 +168,8 @@
   },
   "active": "300870d1a420104b",
   "lastOpenFiles": [
-    "Git/Общие вопросы.md",
     "Git/Анатомия git.md",
+    "Git/Общие вопросы.md",
     "Git",
     "TypeScript/Type vs Interface.md",
     "TypeScript/Mapped Types.md",

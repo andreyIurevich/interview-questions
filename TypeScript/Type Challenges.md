@@ -1,3 +1,24 @@
+TupleToObject:
+
+```ts
+type TupleToObject<T extends readonly string[]> = {
+  [P in T[number]]: P
+}
+```
+
+First of Array:
+
+```ts
+type First<T extends any[]> = T extends [] ? never : T[0];
+type First<T extends any[]> = T['length'] extends 0 ? never : T[0];
+```
+
+Length of Tuple:
+
+```ts
+type Length<T extends readonly any[]> = T['length'];
+```
+
 Кастомный Exclude:
 
 ```typescript

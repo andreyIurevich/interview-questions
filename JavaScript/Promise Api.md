@@ -499,33 +499,44 @@ const promise1 = new Promise((resolve) => {
 
 function debounceAsync(fn, delay) {
   let timeoutId = null;
-  let currentResolve = null;
-  let currentReject = null;
+  let sharedPromise = null;
+  let sharedResolve = null;
+  let sharedReject = null;
 
   return function (...args) {
-    if (timeoutId) {
-      clearTimeout(timeoutId);
-      if (currentReject) {
-        currentReject('Cancelled');
-      }
+    // 1. Если это новый цикл дебаунса, создаем ОДИН общий промис для всех вызовов
+    if (!sharedPromise) {
+      sharedPromise = new Promise((resolve, reject) => {
+        sharedResolve = resolve;
+        sharedReject = reject;
+      });
     }
 
-    return new Promise((resolve, reject) => {
-      currentResolve = resolve;
-      currentReject = reject;
+    // 2. Сбрасываем предыдущий таймер, если он был
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+    }
 
-      setTimeout(async () => {
-        try {
-          const res = await fn(...args);
-          resolve(res);
-        } catch (err) {
-          reject(err);
-        } finally {
-          timeoutId = null;
-        }
-      }, delay);
-    });
-  }
+    // 3. Запускаем новый таймер. 
+    // Заметьте: args берутся из ПОСЛЕДНЕГО вызова благодаря замыканию!
+    timeoutId = setTimeout(async () => {
+      try {
+        const result = await fn(...args);
+        sharedResolve(result); // Резолвим ОДИН общий промис для всех
+      } catch (error) {
+        sharedReject(error);   // Или отклоняем его
+      } finally {
+        // Очищаем состояние для следующего (будущего) цикла дебаунса
+        timeoutId = null;
+        sharedPromise = null;
+        sharedResolve = null;
+        sharedReject = null;
+      }
+    }, delay);
+
+    // 4. Все вызовы в течение delay получают ссылку на один и тот же промис
+    return sharedPromise;
+  };
 }
 
 const search = debounceAsync(async () => {
@@ -628,4 +639,33 @@ function cachePromise(fn) {
 		return result;
 	};
 }
+```
+
+Т.к. при данном подходе кэшируется результат промиса, то при одновременном вызове функций с одинаковыми параметрами может быть проблема "гонки условий". Нужно сохранять сам промис, тогда функция будет возвращать этот промис при одинаковых параметрах.
+
+```js
+function cachePromise(fn) {
+  const argsMap = new Map();
+
+  return function (...args) { // async здесь больше не нужен, так как мы возвращаем промис напрямую
+    const argsStr = JSON.stringify(args); // Используем args вместо arguments
+
+    if (argsMap.has(argsStr)) {
+      return argsMap.get(argsStr);
+    }
+
+    // Сохраняем промис сразу, не дожидаясь await
+    const promise = fn(...args);
+    argsMap.set(argsStr, promise);
+    
+    // Удаляем промис из кэша, если запрос упал с ошибкой,  
+	// чтобы при следующем вызове функция попробовала выполниться снова  
+	// promise.catch(() => {  
+	//	argsMap.delete(argsStr);  
+	// });
+    
+    return promise;
+  };
+}
+
 ```

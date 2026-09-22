@@ -452,6 +452,46 @@ emit<K extends keyof Events>(eventName: K, payload: Events[K]) {
 const emitter = new EventEmitter<HackFrontendEvents>();
 ```
 
+Типизировать функцию getSettings:
+
+```ts
+const appConfig = { 
+	host: "localhost", 
+	port: 3000, 
+	theme: "dark", 
+	isProduction: false, 
+} as const;
+ 
+type appConfigType = typeof appConfig;
+ 
+function getSetting<T extends keyof appConfigType>(key: T): appConfigType[T] {  return appConfig[key]; 
+}
+```
+
+Написать тип-функцию `CamelToSnake<S extends string>`, которая принимает строковый литерал в формате `camelCase` и переводит его в `snake_case`.
+
+```ts
+// 1. Утилита для проверки одного символа
+type TransformLetter<L extends string> = L extends Uppercase<L>
+  ? L extends Lowercase<L> 
+    ? L // Если символ не меняется в обоих регистрах (цифра, дефис), оставляем как есть
+    : `_${Lowercase<L>}` // Если заглавная буква — добавляем "_"
+  : L; // Если строчная — оставляем как есть
+
+// 2. Основной тип. Отделяем первую букву (First), чтобы не ставить "_" в самое начало строки
+type CamelToSnake<S extends string> = S extends `${infer First}${infer Rest}`
+  ? `${First}${CamelToSnakeInternal<Rest>}`
+  : S;
+
+// 3. Рекурсивный обход оставшейся строки по одному символу
+type CamelToSnakeInternal<S extends string> = S extends `${infer Head}${infer Tail}`
+  ? `${TransformLetter<Head>}${CamelToSnakeInternal<Tail>}`
+  : S;
+
+type Result1 = CamelToSnake<"userId">;       // "user_id"
+type Result2 = CamelToSnake<"currentAppTheme">; // "current_app_theme"
+```
+
 
 
 

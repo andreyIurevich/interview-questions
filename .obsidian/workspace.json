@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9b913825c9247e2d",
+        "id": "e50336bac17e22fa",
         "type": "tabs",
         "children": [
           {
-            "id": "300870d1a420104b",
+            "id": "ebe313be4329633c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JavaScript/Promise Api.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Promise Api"
+              "title": "Новая вкладка"
             }
           }
         ]
@@ -80,7 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 209.5
+    "width": 228.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -166,12 +162,13 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "b1cdf03bf8484584",
+  "active": "ebe313be4329633c",
   "lastOpenFiles": [
+    "JavaScript/Promise Api.md",
     "TypeScript/Type Challenges.md",
+    "TypeScript/Задачи (разное).md",
     "TypeScript/Type vs Interface.md",
     "TypeScript/Операторы.md",
-    "JavaScript/Promise Api.md",
     "JavaScript/Задачи.md",
     "План по задачам js.md",
     "Git/Общие вопросы.md",
@@ -194,7 +191,6 @@
     "Алгоритмы/Hash Map.md",
     "React/Практика/Вывод эффектов.md",
     "React/Практика/React (задачи).md",
-    "Алгоритмы/Dynamic Programming.md",
     "Без названия.canvas",
     "React/Теория/Хуки",
     "React/Практика",

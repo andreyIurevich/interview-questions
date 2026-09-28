@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Браузер/Движок V8/Сборка мусора.md",
+                "file": "JavaScript/Event Loop.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Сборка мусора"
+              "title": "Event Loop"
             }
           }
         ]
@@ -80,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.5
+    "width": 223.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -168,14 +168,15 @@
   },
   "active": "ebe313be4329633c",
   "lastOpenFiles": [
-    "Браузер/Движок V8/Скрытые классы.md",
+    "JavaScript/Promise Api.md",
+    "JavaScript/Event Loop.md",
     "Браузер/Движок V8/Сборка мусора.md",
+    "Браузер/Движок V8/Скрытые классы.md",
     "Браузер/Движок V8/Частые вопросы.md",
     "Браузер/Движок V8/JIT-компиляция.md",
     "Браузер/Движок V8/AST-дерево.md",
     "Браузер/Движок V8/Байт-код.md",
     "Браузер/Движок V8",
-    "JavaScript/Promise Api.md",
     "TypeScript/Type Challenges.md",
     "TypeScript/Задачи (разное).md",
     "TypeScript/Type vs Interface.md",
@@ -195,7 +196,6 @@
     "TypeScript/Interface vs Abstract class.md",
     "JavaScript/Поднятие.md",
     "JavaScript/Область видимости.md",
-    "JavaScript/Symbol.md",
     "Без названия.canvas",
     "React/Теория/Хуки",
     "React/Практика",

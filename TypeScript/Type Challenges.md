@@ -492,7 +492,170 @@ type Result1 = CamelToSnake<"userId">;       // "user_id"
 type Result2 = CamelToSnake<"currentAppTheme">; // "current_app_theme"
 ```
 
+Второй вариант реализации Event Emitter c типом данных void:
 
+```ts
+type MyEvents = {
+  "user:login": { userId: string; token: string };
+  "user:logout": void;
+  "score:change": { points: number };
+};
 
+// Добавили partial-объект в listeners, так как изначально он пустой {}
+class EventEmitter<Events extends Record<string, any>> {
+  private listeners: {
+    [P in keyof Events]?: Array<(payload: Events[P]) => void>;
+  } = {};
 
+  // ПРАВИЛЬНО: eventName — это K (строка), а не Events[K] (объект payload)
+  on<K extends keyof Events>(eventName: K, callback: (payload: Events[K]) => void) {
+    // Обязательно используем this.
+    if (!this.listeners[eventName]) {
+      this.listeners[eventName] = [];
+    }
+    this.listeners[eventName]?.push(callback);
+  }
+  
+  // Магия с [...args]: если тип void, массив args будет пустым, и аргумент можно не передавать!
+  emit<K extends keyof Events>(
+    eventName: K, 
+    ...args: Events[K] extends void ? [] : [payload: Events[K]]
+  ) {
+    const payload = args[0]; // достаем payload, если он есть
+    
+    if (this.listeners[eventName]) {
+      this.listeners[eventName]?.forEach(handler => {
+        // Так как callback ожидает payload, передаем его (для void это будет undefined)
+        handler(payload as Events[K]);
+      });
+    }
+  }
+}
+
+// === ПРОВЕРКА В ДЕЙСТВИИ ===
+const emitter = new EventEmitter<MyEvents>(); // Передаем наш интерфейс событий
+
+// 1. Автоматически выводится тип data: { userId: string; token: string }
+emitter.on("user:login", (data) => {
+  console.log(data.userId); 
+});
+
+// 2. Всё отлично работает
+emitter.emit("score:change", { points: 10 }); 
+
+// 3. Для logout второй аргумент НЕ ТРЕБУЕТСЯ! (благодаря трюку с ...args)
+emitter.emit("user:logout"); 
+
+// 4. ОШИБКИ (TS их подсветит):
+// emitter.emit("user:login", { points: 10 }); // ❌ Ошибка: неверный payload
+// emitter.on("unknown", () => {});           // ❌ Ошибка: такого события нет
+```
+
+В данном контексте `void` используется как **маркер отсутствия данных**.
+
+Если перевести запись `"user:logout": void` на русский, она означает: **«Когда происходит событие logout, вместе с ним не передается никаких данных (полезная нагрузка отсутствует)»**.
+
+Почему не использовать `undefined` или `null`?
+
+В TypeScript между `void`, `undefined` и `null` есть тонкая архитектурная разница, когда речь заходит о параметрах функций:
+
+1. **Если написать `undefined`:**  
+    `"user:logout": undefined;`  
+    TypeScript заставит тебя явно передавать `undefined` при вызове:  
+    `emitter.emit("user:logout", undefined);` — это неудобно и выглядит избыточно.
+2. **Если написать `void`:**  
+    В системе типов TS ключевое слово `void` означает «мне не важны эти данные, их тут быть не должно». Благодаря этому компилятор разрешает нам вообще **проигнорировать аргумент** при вызове функции.  
+    `emitter.emit("user:logout");` — код чистый, как мы и хотели.
+
+**Контекст:**  
+У нас есть слой API-функций, которые делают запросы к бэкенду. Все они возвращают `Promise`, внутри которого лежат какие-то данные. Нам нужно написать утилиту для автоматического документирования или генерации типов, которая умеет «заглядывать» внутрь функции, понимать, что она асинхронная, и доставать **чистый тип данных**, который вернется после `await`.
+
+_(В TypeScript есть встроенная утилита `Awaited<T>`, но на собеседовании тебя попросят написать её аналог вручную, чтобы проверить понимание работы с асинхронными типами)._
+
+**Твоя задача:**  
+Написать тип-функцию `UnwrapPromise<T>`, которая:
+
+1. Принимает тип функции `T`.
+2. Если эта функция возвращает `Promise<InferedData>`, то тип должен вернуть этот самый `InferedData`.
+3. Если функция возвращает обычное значение (не промис), тип должен вернуть тип этого значения.
+4. Если передано вообще не функция, можно вернуть `never` или исходный тип.
+
+_Подсказка: здесь тебе нужно будет дважды использовать оператор `infer` внутри условных типов `extends`. Сначала чтобы достать тип возвращаемого значения функции (как это делает `ReturnType`), а затем чтобы «распаковать» сам `Promise`._
+
+```ts
+// Примеры асинхронных функций:
+const fetchUser = () => Promise.resolve({ id: 1, name: "Иван" });
+const fetchVersion = async () => 2026; // async функция автоматически оборачивает результат в Promise<number>
+const getStaticData = () => "hello";   // Обычная функция, возвращает string
+
+// Твоя реализация:
+type UnwrapPromise<T> = 
+  // ??? Твой код здесь
+
+// Проверка результата:
+type UserData = UnwrapPromise<typeof fetchUser>;       // Ожидается: { id: number; name: string; }
+type Version   = UnwrapPromise<typeof fetchVersion>;    // Ожидается: number
+type Static    = UnwrapPromise<typeof getStaticData>;   // Ожидается: string
+```
+
+Решение:
+
+```ts
+type UnwrapPromise<T> = T extends (...args: any[]) => infer R 
+  ? R extends Promise<infer U> // Если возвращаемое значение (R) — это Промис
+    ? U                        // ...то возвращаем то, что внутри Промиса (U)
+    : R                        // ...иначе возвращаем само значение (R)
+  : never;                     // Если передали вообще не функцию
+```
+
+**Задача: Асинхронный конвейер (Async Pipeline)**
+
+**Контекст:**  
+В NodeJS или в сложных фронтенд-архитектурах часто используется паттерн «конвейер» (Pipeline). У нас есть массив асинхронных функций, где каждая следующая функция принимает на вход результат работы предыдущей функции (как метод `.then()` у промисов). Нам нужно написать функцию `asyncPipeline`, которая принимает начальное значение и массив таких функций, и возвращает итоговый промис.
+
+**Твоя задача:**  
+Правильно типизировать **только аргумент `functions` и возвращаемое значение функции `asyncPipeline`**. Массив функций должен быть строго типизирован как последовательная цепочка:
+
+1. Первая функция принимает тип начального значения `A` и возвращает `Promise<B>` (или просто `B`).
+2. Вторая функция обязана принимать тип `B` и возвращать `Promise<C>`.
+3. Третья функция обязана принимать тип `C` и возвращать `Promise<D>`, и так далее.
+4. Итоговый результат всей функции `asyncPipeline` должен автоматически выводиться как `Promise<D>`
+    
+    (тип, который возвращает _последняя_ функция в массиве).
+
+_Подсказка: Для простоты на собеседованиях обычно просят зафиксировать цепочку из **трех** конкретных функций через кортеж (Tuple) в дженериках, а не писать бесконечный динамический массив (бесконечный массив требует сложной рекурсии, её редко просят писать «вживую»). Давай сделаем вариант для строго трех функций._
+
+Решение:
+
+```ts
+// Входные данные (пример цепочки):
+const step1 = async (input: number) => input + 10;          // Принимает number, возвращает Promise<number>
+const step2 = async (input: number) => `String: ${input}`;   // Принимает number, возвращает Promise<string>
+const step3 = async (input: string) => input.split("");       // Принимает string, возвращает Promise<string[]>
+
+// Твоя задача — описать дженерики и типы аргументов:
+function asyncPipeline<A, B, C, D>(
+  initialValue: A,
+  functions: [
+    // ??? Опиши типы для трех функций в кортеже
+    (input: A) => B | Promise<B>, // Принимает старт (A), возвращает (B) 
+    (input: B) => C | Promise<C>, // Принимает результат первого шага (B), возвращает (C) 
+    (input: C) => D | Promise<D> // Принимает результат второго шага (C), возвращает финал (D) ]
+  ]
+): Promise<D> { // Ожидается Promise от финального результата
+  // Внутри рантайм-логика (её писать не нужно, она для примера):
+  return functions.reduce(async (acc, fn) => fn(await acc), Promise.resolve(initialValue as any)) as any;
+}
+
+// === ПРОВЕРКА ===
+
+// 1. Правильный вызов (должен компилироваться без ошибок):
+// Начальное значение: number (5). Финальный результат должен быть Promise<string[]>
+const finalResult = asyncPipeline(5, [step1, step2, step3]);
+
+// 2. Пример ошибки (TS должен ругаться):
+// Если мы поменяем местами step2 и step3, цепочка сломается, 
+// так как step3 ожидает string, а step1 возвращает number.
+const errorResult = asyncPipeline(5, [step1, step3, step2]); // ❌ Ошибка компиляции в массиве!
+```
 

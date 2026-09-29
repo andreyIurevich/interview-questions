@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/Event Loop.md",
+                "file": "TypeScript/Type Challenges.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Event Loop"
+              "title": "Type Challenges"
             }
           }
         ]
@@ -80,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 223.5
+    "width": 239.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -168,8 +168,8 @@
   },
   "active": "ebe313be4329633c",
   "lastOpenFiles": [
-    "JavaScript/Promise Api.md",
     "JavaScript/Event Loop.md",
+    "JavaScript/Promise Api.md",
     "Браузер/Движок V8/Сборка мусора.md",
     "Браузер/Движок V8/Скрытые классы.md",
     "Браузер/Движок V8/Частые вопросы.md",

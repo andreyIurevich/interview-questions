@@ -150,3 +150,86 @@ function threeSum(nums) {
   return res;
 }
 ```
+
+**Best Time to Buy and Sell Stock**
+
+You are given an integer array `prices` where `prices[i]` is the price of NeetCoin on the `ith` day.
+
+You may choose a **single day** to buy one NeetCoin and choose a **different day in the future** to sell it.
+
+Return the maximum profit you can achieve. You may choose to **not make any transactions**, in which case the profit would be `0`.
+
+Решение:
+
+```js
+class Solution {
+    /**
+     * @param {number[]} prices
+     * @return {number}
+     */
+    maxProfit(prices) {
+        let maxP = 0;
+        let minBuy = prices[0];
+
+        for (let sell of prices) {
+            maxP = Math.max(maxP, sell - minBuy);
+            // на каждом шаге выбираем минимальную цену для покупки
+            minBuy = Math.min(minBuy, sell); 
+        }
+        return maxP;
+    }
+}
+```
+
+**Longest Repeating Character Replacement**
+
+You are given a string `s` consisting of only uppercase english characters and an integer `k`. You can choose up to `k` characters of the string and replace them with any other uppercase English character.
+
+After performing at most `k` replacements, return the length of the longest substring which contains only one distinct character.
+
+```js
+Input: s = "XYYX", k = 2
+
+Output: 4
+```
+
+```js
+Input: s = "AAABABB", k = 1
+
+Output: 5
+```
+
+Решение:
+
+```js
+function characterReplacement(s, k) {
+    const counts = {}; // Карта частот букв в текущем окне
+    let left = 0;
+    let maxCount = 0; // Максимальная частота одной буквы в окне
+    let maxLength = 0;
+
+    for (let right = 0; right < s.length; right++) {
+        const char = s[right];
+        // Увеличиваем счетчик текущей буквы
+        counts[char] = (counts[char] || 0) + 1;
+        
+        // Обновляем максимум для самой частой буквы
+        maxCount = Math.max(maxCount, counts[char]);
+
+        // Длина текущего окна: (right - left + 1)
+        // Если количество "чужих" букв больше k, сужаем окно слева
+        while ((right - left + 1) - maxCount > k) {
+            counts[s[left]]--;
+            left++;
+        }
+
+        // Запоминаем самую большую длину валидного окна
+        maxLength = Math.max(maxLength, right - left + 1);
+    }
+
+    return maxLength;
+}
+
+characterReplacement('AABABBA', 1);
+```
+

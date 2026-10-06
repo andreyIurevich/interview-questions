@@ -11,10 +11,14 @@
             "id": "2bb22d26916a895b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "TypeScript/Операторы.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Новая вкладка"
+              "title": "Операторы"
             }
           }
         ]
@@ -76,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 243.5
+    "width": 233.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -162,19 +166,20 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "b1cdf03bf8484584",
+  "active": "2bb22d26916a895b",
   "lastOpenFiles": [
-    "Git/Общие вопросы.md",
-    "Git/Отмена изменений.md",
+    "TypeScript/Type Challenges.md",
     "Алгоритмы/Two pointers.md",
+    "JavaScript/Задачи.md",
+    "JavaScript/Promise Api.md",
+    "Git/Анатомия git.md",
+    "Git/Отмена изменений.md",
+    "Git/Общие вопросы.md",
     "Алгоритмы/Dynamic Programming.md",
     "Алгоритмы/Hash Map.md",
-    "JavaScript/Задачи.md",
     "System Design/План.md",
     "System Design",
-    "TypeScript/Type Challenges.md",
     "JavaScript/Event Loop.md",
-    "JavaScript/Promise Api.md",
     "Браузер/Движок V8/Сборка мусора.md",
     "Браузер/Движок V8/Скрытые классы.md",
     "Браузер/Движок V8/Частые вопросы.md",
@@ -186,7 +191,6 @@
     "TypeScript/Type vs Interface.md",
     "TypeScript/Операторы.md",
     "План по задачам js.md",
-    "Git/Анатомия git.md",
     "Git",
     "TypeScript/Mapped Types.md",
     "TypeScript/Ссылки.md",

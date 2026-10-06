@@ -659,3 +659,109 @@ const finalResult = asyncPipeline(5, [step1, step2, step3]);
 const errorResult = asyncPipeline(5, [step1, step3, step2]); // ❌ Ошибка компиляции в массиве!
 ```
 
+**Задача №9: Глубокие пути объекта в виде строк (Deep Paths)**
+
+**Твоя задача:**  
+Написать тип-функцию `NestedPaths<T>`, которая принимает тип объекта `T`, рекурсивно обходит все его вложенные свойства и возвращает Union (объединение) всех возможных путей к ключам в виде строк через точку.
+
+_Подсказка: Тебе нужно перебирать ключи объекта через Mapped Type. Если значение ключа `T[K]` является объектом (`extends object`), то путь для этого ключа будет состоять из самого ключа `K`, объединенного через точку с результатом рекурсивного вызова `NestedPaths<T[K]>`. В качестве базового случая рекурсии возвращай сам ключ `K & string`._
+
+Решение:
+
+```ts
+type UserProfile = {
+  id: number;
+  info: {
+    name: string;
+    avatar: {
+      url: string;
+      size: number;
+    }
+  };
+  role: string;
+};
+
+// Твоя реализация:
+type NestedPaths<T> = type NestedPaths<T> = {
+  [K in keyof T]: K & string extends infer Key extends string
+    ? T[K] extends object
+      ? Key | `${Key}.${NestedPaths<T[K]>}`
+      : Key
+    : never
+}[keyof T];
+
+// Проверка результата:
+type MyPaths = NestedPaths<UserProfile>;
+
+/* 
+  Ожидаемый результат в MyPaths (в любом порядке):
+  | "id"
+  | "role"
+  | "info"
+  | "info.name"
+  | "info.avatar"
+  | "info.avatar.url"
+  | "info.avatar.size"
+*/
+```
+
+`K & string` - В TypeScript ключи объекта `keyof T` могут быть тремя сущностями: строками (`string`), числами (`number`) или символами (`symbol`).  
+Но в шаблонную строку `${...}` через точку мы можем подставлять **только строки**. Если мы попытаемся написать `${K}`, TypeScript выдаст ошибку: _«Ключ может быть числом или символом, я не могу приклеить его к строке»_.
+
+Запись `K & string` (пересечение с типом string) — это способ сказать компилятору: **«Возьми только те ключи, которые гарантированно являются строками»**. Все числа и символы отсекаются.
+
+`extends infer Key` :
+1. TypeScript вычисляет `K & string` (получает чистую строку-название ключа).
+2. Ключевое слово **`infer Key`** говорит компилятору: **«Запиши результат этого вычисления в новую временную переменную с именем `Key`»**.
+3. Теперь на протяжении всего оставшегося тернарного оператора мы можем вместо `K & string` писать просто короткое слово `Key`.
+
+`extends string` - Это называется **Constraint on Infer (Ограничение для выводимого типа)**, оно появилось в TypeScript 4.7+.  
+Мы не просто создаем переменную `Key`, мы сразу гарантируем компилятору, что внутри этой переменной будет лежать **именно строка** (`extends string`). Это окончательно успокаивает TypeScript, и он без лишних проверок разрешает использовать переменную `Key` внутри шаблонной строки: `${Key}.${NestedPaths<...>`}.
+
+`Key | ${Key}.${NestedPaths<T[K]>}` - здесь сохраняется ключ для объектного свойства + объединение `NestedPaths<T[K]>`.
+
+Практическое применение - реализовать функцию `getValueByPath`:
+
+```ts
+type GetPropertyValue<T, P extends string> = 
+  P extends `${infer Left}.${infer Right}`
+    ? Left extends keyof T
+      ? GetPropertyValue<T[Left], Right> // Рекурсивно идем глубже по правой части пути
+      : never
+    : P extends keyof T
+      ? T[P] // Базовый случай: точек больше нет, забираем финальный тип свойства
+      : never;
+
+function getValueByPath<T extends object, P extends NestedPaths<T>>(
+  obj: T,
+  path: P
+): GetPropertyValue<T, P> {
+  // Реализация на чистом JS (разбиваем строку по точкам и бежим через reduce)
+  return path.split('.').reduce((acc: any, key) => acc?.[key], obj);
+}
+```
+
+**Задача**: Написать рабочий **парсер строки URL-параметров** (например, превратить строку `"/user/:id/posts/:postId"` в тип `{ id: string, postId: string }`
+
+```ts
+type ParseParams<Str extends string, Acc extends Record<string, any> = {}> = 
+  Str extends `${infer Left}/:${infer Param extends string}/${infer Right}`
+    ? ParseParams<Right, Acc & { [K in Param]: string }> // Рекурсия для середины строки
+    : Str extends `${infer Left}/:${infer Param extends string}`
+      ? Acc & { [K in Param]: string } // Финал для конца строки
+      : Acc; // Если параметров больше нет (или не было), возвращаем то, что накопили
+
+// Проверка
+// Тест 1: Несколько параметров
+type ViewPostParams = ParseParams<"/user/:id/posts/:postId">;
+// Результат (под капотом): {} & { id: string } & { postId: string }
+// Для TypeScript это эквивалентно: { id: string; postId: string; }
+
+// Тест 2: Один параметр в самом конце
+type UserInfoParams = ParseParams<"/api/v1/users/:userId">;
+// Результат: { userId: string; }
+
+// Тест 3: Строка без параметров вообще
+type StaticPageParams = ParseParams<"/about/company">;
+// Результат: {} (пустой объект, код не сломался!)
+```

@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2bb22d26916a895b",
+            "id": "31558857442e4fd0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript/Операторы.md",
+                "file": "JavaScript/Сортировка массивов.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Операторы"
+              "title": "Сортировка массивов"
             }
           }
         ]
@@ -80,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 233.5
+    "width": 252.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -166,8 +166,10 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "2bb22d26916a895b",
+  "active": "31558857442e4fd0",
   "lastOpenFiles": [
+    "JavaScript/Сортировка массивов.md",
+    "TypeScript/Операторы.md",
     "TypeScript/Type Challenges.md",
     "Алгоритмы/Two pointers.md",
     "JavaScript/Задачи.md",
@@ -189,14 +191,12 @@
     "Браузер/Движок V8",
     "TypeScript/Задачи (разное).md",
     "TypeScript/Type vs Interface.md",
-    "TypeScript/Операторы.md",
     "План по задачам js.md",
     "Git",
     "TypeScript/Mapped Types.md",
     "TypeScript/Ссылки.md",
     "TypeScript/Система типов данных.md",
     "TypeScript/Generics.md",
-    "TypeScript/Infer.md",
     "Без названия.canvas",
     "React/Теория/Хуки",
     "React/Практика",

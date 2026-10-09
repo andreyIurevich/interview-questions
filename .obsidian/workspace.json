@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d826d657d36a3c8a",
+        "id": "c4a0fa77a2cdec5e",
         "type": "tabs",
         "children": [
           {
-            "id": "31558857442e4fd0",
+            "id": "a53082561ff88efb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/Сортировка массивов.md",
+                "file": "Git/Rebase.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Сортировка массивов"
+              "title": "Rebase"
             }
           }
         ]
@@ -80,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5
+    "width": 200
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -166,20 +166,23 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "31558857442e4fd0",
+  "active": "a53082561ff88efb",
   "lastOpenFiles": [
+    "Git/Шпаргалка.md",
+    "Git/Rebase.md",
+    "Git/Общие вопросы.md",
+    "Алгоритмы/Алгоритм Sweep-line.md",
     "JavaScript/Сортировка массивов.md",
+    "System Design/План.md",
+    "Git/Анатомия git.md",
+    "Git/Отмена изменений.md",
     "TypeScript/Операторы.md",
     "TypeScript/Type Challenges.md",
     "Алгоритмы/Two pointers.md",
     "JavaScript/Задачи.md",
     "JavaScript/Promise Api.md",
-    "Git/Анатомия git.md",
-    "Git/Отмена изменений.md",
-    "Git/Общие вопросы.md",
     "Алгоритмы/Dynamic Programming.md",
     "Алгоритмы/Hash Map.md",
-    "System Design/План.md",
     "System Design",
     "JavaScript/Event Loop.md",
     "Браузер/Движок V8/Сборка мусора.md",
@@ -194,9 +197,6 @@
     "План по задачам js.md",
     "Git",
     "TypeScript/Mapped Types.md",
-    "TypeScript/Ссылки.md",
-    "TypeScript/Система типов данных.md",
-    "TypeScript/Generics.md",
     "Без названия.canvas",
     "React/Теория/Хуки",
     "React/Практика",

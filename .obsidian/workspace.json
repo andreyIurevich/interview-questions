@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c4a0fa77a2cdec5e",
+        "id": "cfec077781052cc8",
         "type": "tabs",
         "children": [
           {
-            "id": "a53082561ff88efb",
+            "id": "e4394505d00bc5f1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JavaScript/Promise Api.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Promise Api"
+              "title": "Новая вкладка"
             }
           }
         ]
@@ -80,7 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 231.5
+    "width": 234.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -166,8 +162,25 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "a53082561ff88efb",
+  "active": "b1cdf03bf8484584",
   "lastOpenFiles": [
+    "TypeScript/Теория/Система типов данных.md",
+    "TypeScript/Ссылки.md",
+    "TypeScript/Тестирование типов.md",
+    "TypeScript/Теория",
+    "TypeScript/Теория/Операторы.md",
+    "TypeScript/Теория/Type vs Interface.md",
+    "TypeScript/Теория/Mapped Types.md",
+    "TypeScript/Теория/Interface vs Abstract class.md",
+    "TypeScript/Теория/Infer.md",
+    "TypeScript/Теория/Generics.md",
+    "TypeScript/Теория/Conditional Types.md",
+    "TypeScript/Задачи/Практические задачи 1.md",
+    "TypeScript/Задачи/Type Challenges Easy.md",
+    "TypeScript/Задачи/Непроверенное.md",
+    "TypeScript/Задачи/Небольшие утилиты.md",
+    "TypeScript/Задачи",
+    "JavaScript/Promise Api.md",
     "Git/Rebase.md",
     "Git/Анатомия git.md",
     "Архитектура/SOLID.md",
@@ -175,26 +188,10 @@
     "System Design/CDN.md",
     "System Design/Core Web Vitals.md",
     "System Design/Гидрация.md",
-    "TypeScript/Type Challenges.md",
     "Git/Отмена изменений.md",
     "Git/Шпаргалка.md",
     "Git/Общие вопросы.md",
-    "Алгоритмы/Алгоритм Sweep-line.md",
-    "JavaScript/Сортировка массивов.md",
-    "TypeScript/Операторы.md",
-    "Алгоритмы/Two pointers.md",
-    "JavaScript/Задачи.md",
-    "JavaScript/Promise Api.md",
-    "Алгоритмы/Dynamic Programming.md",
-    "Алгоритмы/Hash Map.md",
     "System Design",
-    "JavaScript/Event Loop.md",
-    "Браузер/Движок V8/Сборка мусора.md",
-    "Браузер/Движок V8/Скрытые классы.md",
-    "Браузер/Движок V8/Частые вопросы.md",
-    "Браузер/Движок V8/JIT-компиляция.md",
-    "Браузер/Движок V8/AST-дерево.md",
-    "Браузер/Движок V8/Байт-код.md",
     "Браузер/Движок V8",
     "Git",
     "Без названия.canvas",
@@ -202,8 +199,6 @@
     "React/Практика",
     "React/Теория",
     "Браузер/Политики безопасности",
-    "Браузер/Виды атак",
-    "Браузер/Безопасность",
-    "Архитектура"
+    "Браузер/Виды атак"
   ]
 }

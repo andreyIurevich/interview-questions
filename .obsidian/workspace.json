@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "cfec077781052cc8",
+        "id": "2130b0391a30009e",
         "type": "tabs",
         "children": [
           {
-            "id": "e4394505d00bc5f1",
+            "id": "0e890db59c3e0583",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "TypeScript/Задачи/Практические задачи 1.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Новая вкладка"
+              "title": "Практические задачи 1"
             }
           }
         ]
@@ -76,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 234.5
+    "width": 239.5
   },
   "right": {
     "id": "ec6445908484ba86",
@@ -162,8 +166,11 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "b1cdf03bf8484584",
+  "active": "0e890db59c3e0583",
   "lastOpenFiles": [
+    "TypeScript/Задачи/Небольшие утилиты.md",
+    "TypeScript/Задачи/Практические задачи 1.md",
+    "JavaScript/Promise Api.md",
     "TypeScript/Теория/Система типов данных.md",
     "TypeScript/Ссылки.md",
     "TypeScript/Тестирование типов.md",
@@ -175,12 +182,9 @@
     "TypeScript/Теория/Infer.md",
     "TypeScript/Теория/Generics.md",
     "TypeScript/Теория/Conditional Types.md",
-    "TypeScript/Задачи/Практические задачи 1.md",
     "TypeScript/Задачи/Type Challenges Easy.md",
     "TypeScript/Задачи/Непроверенное.md",
-    "TypeScript/Задачи/Небольшие утилиты.md",
     "TypeScript/Задачи",
-    "JavaScript/Promise Api.md",
     "Git/Rebase.md",
     "Git/Анатомия git.md",
     "Архитектура/SOLID.md",
